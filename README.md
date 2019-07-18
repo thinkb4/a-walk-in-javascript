@@ -1,1 +1,144 @@
-# js-coding-club
+# JavaScript Coding Club
+
+## Table Of Contents
+
+- Introduction to JavaScript
+  - What is JS anyway?
+  - What's ECMAScript?
+  - Language features quick overview
+  - Myths busted
+- Initial Setup
+  - Basic Runtime ( Node )
+  - IDE ( Visual Studio Code )
+  - Run Code extension
+  - Introduction to NPM
+  - ...
+- ES5 vs ES6
+  - ...
+  - ..... (we will work with ES6)
+  - After ES6?
+- Syntax & Grammar
+  - ...
+  - ...
+  - .. good practices
+- Types
+  - ...
+  - ...
+  - Type conversion / Coercion
+  - .. good practices
+- Operators
+  - ...
+  - ...
+  - .. good practices
+- Arrays explained
+  - ...
+  - ...
+  - .. good practices
+- Built in methods
+  - ...
+  - ...
+  - .. good practices
+- Objects explained
+  - ..
+  - ...
+  - .. good practices
+- Conditional statements
+  - ..
+  - ..
+  - ..
+  - .. good practices
+- this Keyword
+  - ..
+  - ..
+  - ..
+  - .. good practices
+- Iteration
+  - ...
+  - ..
+  - Introduce **iterable** concept
+  - .. good practices
+- Functions
+  - ..
+  - ..
+  - ..
+  - ..
+  - .. good practices
+- Execution context
+  - ...
+  - ...
+  - .. good practices
+- Scope
+  - ..
+  - bind
+  - ES5 hoisting
+  - .. good practices
+- Arrow Functions
+  - ...
+  - ...
+  - .. good practices
+- Generators & Iterators
+  - ..
+  - ..
+  - .. good practices
+- Closure
+  - ..
+  - ..
+  - .. good practices
+- Classes
+  - ..
+  - ..
+  - ..
+  - .. good practices
+- OOP vs Functional
+  - ...
+  - ...
+  - .. good practices
+- Event Loop
+  - ..
+  - ..
+  - ..
+  - .. good practices
+- Asynchronous programming
+  - Callback
+  - Promise
+  - Async/Await
+  - .. good practices
+- Debugging
+  - ..
+  - ..
+  - ..
+  - .. good practices
+- Unit / integration tests
+  - ...
+  - ...
+  - .. good practices
+- The runtimes
+  - Web Browser
+  - Node
+- Javascript and the web
+  - V8, SpiderMonkey, Chakra, WebKit, Hermes
+  - HTML
+  - CSS
+  - .. good practices
+- Transpilers
+  - Babel
+  - ...
+  - .. good practices
+- Task runners & bundlers
+  - Webpack
+  - RollUp
+  - ...
+  - .. good practices
+- Best practices
+  - ..
+  - Linting
+  - .. good practices
+- Appendix
+  - Destructuring
+    - ..
+    - ..
+    - .. good practices
+  - Function composition
+    - ..
+    - ..
+    - .. good practices
