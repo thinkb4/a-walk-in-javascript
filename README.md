@@ -8,16 +8,16 @@
     - What's ECMAScript?
     - Language features quick overview
     - Myths busted
-  - Initial workspace Setup
-    - Basic Runtime ( Node )
-    - IDE ( Visual Studio Code )
-    - Run Code extension
-    - Introduction to NPM
   - ES5 vs ES6
     - Relevant differences
     - Relevant improvements
     - Why are we using ES6 in this course?
     - After ES6?
+  - Initial workspace Setup
+    - Basic Runtime ( Node )
+    - IDE ( Visual Studio Code )
+    - Run Code extension
+    - Introduction to NPM
 - DAY 2
   - Syntax, Grammar & Semantics
     - Definitions
