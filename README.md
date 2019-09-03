@@ -18,35 +18,27 @@
     - IDE ( Visual Studio Code )
     - Run Code extension
     - Introduction to NPM
-- DAY 2
+- [DAY 2](/day_02.md)
   - Syntax, Grammar & Semantics
-    - Definitions
-    - ...
-    - Syntactic and Lexical Grammars <https://www.ecma-international.org/ecma-262/6.0/#sec-syntactic-and-lexical-grammars>
-    - ECMAScript Language: Lexical Grammar <https://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-lexical-grammar>
-    - Lexical grammar <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar>
-    - Statement <https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#statements>
-    - Expression <https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#expressions>
-    - Statement Completion Values <https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch5.md#statement-completion-values>
-    - Contextual Rules <https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch5.md#contextual-rules> (e.g {} + [] vs [] + {})
-    - .. good practices
-  - Types
-    - ECMAScript Types
-    - <https://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-data-types-and-values>
-    - Value groups ( Primitive, Object )
-      - Primitive <https://developer.mozilla.org/en-US/docs/Glossary/Primitive>
-    - From Primitive to Native and back again <https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch3.md>
-    - Boxing Wrappers 
-      - <https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch3.md#boxing-wrappers>
-      - <https://developer.mozilla.org/en-US/docs/Glossary/Primitive#Primitive_wrapper_objects_in_JavaScript>
-    - Type Conversion ( explicit type transformation )
-    - Type Coercion ( implicit type transformation )
-    - Some analysis on Operators and coercion
-    - .. good practices
-  - Declarations and the Variable Statement
-    - <https://www.ecma-international.org/ecma-262/6.0/#sec-declarations-and-the-variable-statement>
+    - Statements
+    - Expressions
+    - Contextual Rules
+  - ECMAScript Types
+    - Value type groups
+      - Primitives
+        - Boolean
+        - Null
+        - Undefined
+        - Number
+        - BigInt ( stage-3 )
+        - String
+        - Symbol
+      - Composite/Compound
+        - Object
+    - Type conversion
+      - Explicit ( "type casting" )
+      - Implicit ( Coercion )
   - Operators
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Operators>
     - Assignment operators
     - Comparison operators
     - Arithmetic operators
@@ -57,9 +49,8 @@
     - Comma operator
     - Unary operators
     - Relational operators
-    - Operators Precedence
     - Destructuring
-    - .. good practices
+    - Operators Precedence
 - DAY 3
   - Objects explained
     - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Objects>
@@ -154,16 +145,6 @@
     - Async/Await
     - .. good practices
 - DAY 10
-  - Debugging
-    - <https://developer.mozilla.org/en-US/search?q=debug>
-    - The console object
-    - .. good practices
-  - Unit / integration tests
-    - <http://www.softwaretestingclass.com/what-is-difference-between-unit-testing-and-integration-testing/>
-    - TDD
-    - <https://jestjs.io/>
-    - .. good practices
-- DAY 11
   - The runtimes
     - Web Browser
     - Node
@@ -173,7 +154,11 @@
     - HTML
     - CSS
     - .. good practices
-- DAY 12
+- DAY 11
+  - Debugging
+    - <https://developer.mozilla.org/en-US/search?q=debug>
+    - The console object
+    - .. good practices
   - Transpilers
     - Babel
     - ...
@@ -183,13 +168,17 @@
     - RollUp
     - ...
     - .. good practices
-- DAY 13
-  - Appendix
-    - Destructuring
-      - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/destructuring.md>
-      - ..
-      - .. good practices
-    - Function composition
-      - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/currying_partialApplication_composition.md>
-      - ..
-      - .. good practices
+  - Unit / integration tests
+    - <http://www.softwaretestingclass.com/what-is-difference-between-unit-testing-and-integration-testing/>
+    - TDD
+    - <https://jestjs.io/>
+    - .. good practices
+- DAY 12
+  - Destructuring
+    - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/destructuring.md>
+    - ..
+    - .. good practices
+  - Function composition
+    - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/currying_partialApplication_composition.md>
+    - ..
+    - .. good practices
