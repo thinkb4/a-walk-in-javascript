@@ -1,4 +1,4 @@
-# [JavaScript Coding Club](/README.md)
+# [A walk in JavaScript](/README.md)
 
 ## DAY 1
 

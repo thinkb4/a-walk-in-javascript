@@ -1,4 +1,8 @@
-# JavaScript Coding Club
+# A walk in JavaScript
+
+## Preface
+
+A lot of information has been written about JavaScript and EcmaScript since both the language creation and the standard definition. The intention of this road map is to share with you one of many path you can take to grok the language and specially to point you to the high quality information in the intent to save you from hitting misleading ( when not completely wrong ) documents outside in the wild. Hopefully your walk is much easier than mine!
 
 ## Table Of Contents
 
