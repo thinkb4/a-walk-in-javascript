@@ -34,6 +34,7 @@
   - Relational operators
   - Destructuring
   - Operators Precedence
+  - Spread/Rest
 
 ## Syntax, Grammar & Semantics
 
@@ -216,3 +217,18 @@ If you want to dive into how operators are defined by the spec, there's a comple
 
 Just like in math, in computer programming there's a set of rules or conventions to define which procedure to perform first in order to evaluate an expression. Depending on the order we might have different results.
 Javascript is not an exception and we cas see this table very well explained at [MDN web Docs - Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
+
+### The case of the ... ( spread/rest "operator" )
+A new syntactic element was introduced in ES6 but surprisingly it's not listed as part of the operators but rather as a left-hand-side expression, specifically an assignment expression. 
+
+You can search for **SpreadElement** on the [spec](http://www.ecma-international.org/ecma-262/6.0/) to see how it behaves depending on the context.
+
+A clearer approach can be found on MDN
+
+- [Left-hand-side expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Left-hand-side_expressions)
+- [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+- [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+And we can find some interesting insights at Kyle Simpson's [YDKJS Edition 1 - ES6 & Beyond - Chapter 2](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch2.md#spreadrest)
+
+As you can see, even though the documentation and the naming is quite awkward, it opens a new world of capabilities and really makes our lives easier when you start mastering it.
