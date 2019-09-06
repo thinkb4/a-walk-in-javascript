@@ -55,6 +55,7 @@ A lot of information has been written about JavaScript and EcmaScript since both
     - Relational operators
     - Destructuring
     - Operators Precedence
+    - Spread/Rest
 - DAY 3
   - Objects explained
     - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Objects>
