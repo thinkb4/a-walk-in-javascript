@@ -56,7 +56,7 @@ A lot of information has been written about JavaScript and EcmaScript since both
     - Destructuring
     - Operators Precedence
     - Spread/Rest
-- DAY 3
+- [DAY 3](/day_03.md)
   - Objects explained
     - Objects, the big picture
     - Syntax
