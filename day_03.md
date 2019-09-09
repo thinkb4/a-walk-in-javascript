@@ -4,14 +4,13 @@
 
 - Objects explained
   - Objects, the big picture
-  - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Objects>
+  - Syntax
   - Object properties attributes (accessors, descriptors)
-  - Exotic Object <https://www.ecma-international.org/ecma-262/6.0/#sec-exotic-object>
-  - .. good practices
-- Objects Built in methods
-  - ...
-  - ...
-  - .. good practices
+  - Prototype
+  - Behavior Delegation
+  - Exotic Objects
+  - Object built-in methods
+  - Standard built-in objects
 
 ## Objects, the big picture
 
@@ -80,3 +79,108 @@ Great, now we know this:
     > object specified and supplied by an ECMAScript implementation
 
 Are we done? ... not even close!!!!! There's still much to see!
+
+## The syntax
+
+In order to create a new object we can use 3 different syntax
+
+1. [Literal notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Syntax) a.k.a initializer notation, a.k.a. plain object ( `{}` )
+2. [Static built-in constructor method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#Syntax) ( `Object.create(proto, [propertiesObject])` )
+3. [Object constructor notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Syntax)  ( `new Object()` )
+
+Each one of the forms will provide you different characteristics but all will end up creating the same thing, a n ew object. I listed them in order being the first the most common and the third the least used.
+
+## Properties
+
+As we saw before, properties come in two flavors which can be defined in terms of `descriptors`, `data descriptors` and `accessor descriptors`.
+
+> A data descriptor is a property that has a value, which may or may not be writable. An accessor descriptor is a property described by a getter-setter pair of functions. A descriptor must be one of these two flavors; it cannot be both.
+>
+> Both data and accessor descriptors are objects. They share the following optional keys(The default value is in the case of defining properties using `Object.defineProperty()`)
+
+Let's see how we can granularly define/modify the properties of an object using [Object.defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+
+More insights can be found [YDKJS: this & Object Prototypes - Property descriptors](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch3.md#property-descriptors)
+
+Let's have some fun
+
+```javascript
+
+/**
+ *
+ * @param {Object} object
+ * @param {string|number|symbol} key
+ * @param {string} acceptType [undefined|object|boolean|number|bigint|string|symbol|function|object]
+ *
+ * @returns {undefined}
+ */
+function defineWithType (object, key, acceptType) {
+    let oldValue = object.key;
+    Object.defineProperty(object, key, {
+        get () {
+            return oldValue;
+        },
+        set (newValue) {
+            if (typeof newValue !== acceptType) {
+                setTimeout(() => document.write(decodeURIComponent(escape(window.atob("PGgxIHN0eWxlPSJmb250LXNpemU6NTBweCI+SW4geW91ciBwcmV0dHkgZmFjZSBUeXBlU2NyaXB0PGJyIC8+ICjijJDilqBf4pagKTwvaDE+")))), 1000)
+                throw TypeError(`expect value to be ${acceptType}, ${(typeof newValue)} was provided instead`)
+            }
+            oldValue = newValue;
+        }
+    })
+}
+```
+
+## Prototype
+
+Everybody talks about the **prototype chain** but what's that?
+
+> object that provides shared properties for other objects
+>
+> When a constructor creates an object, that object implicitly references the constructor’s prototype property for the purpose of resolving property references. The constructor’s prototype property can be referenced by the program expression constructor.prototype, and properties added to an object’s prototype are shared, through inheritance, by all objects sharing the prototype. Alternatively, a new object may be created with an explicitly specified prototype by using the Object.create built-in function.
+>
+> Source: [ECMA International](http://www.ecma-international.org/ecma-262/6.0/#sec-terms-and-definitions-prototype)
+
+oh yeah ... wait!!!  ... what??
+
+Pleas MDN, help us
+
+> Nearly all objects in JavaScript are instances of Object; a typical object inherits properties (including methods) from Object.prototype, although these properties may be shadowed (a.k.a. overridden). However, an Object may be deliberately created for which this is not true (e.g. by Object.create(null)), or it may be altered so that this is no longer true (e.g. with Object.setPrototypeOf).
+>
+> Changes to the Object prototype object are seen by all objects through prototype chaining, unless the properties and methods subject to those changes are overridden further along the prototype chain. This provides a very powerful although potentially dangerous mechanism to override or extend object behavior.
+> Source: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+
+Ok, that's better but can we have a cleared description?
+
+Yes!! Let's go to [YDKJS: this & Object Prototypes - Chapter 5 - Prototypes](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch5.md)
+
+That's even better
+
+## Behavior Delegation
+
+Now let's take a look at one of the most powerful aspects of the prototype system. Let's get into Behavior Delegation, Kyle Simpson dedicated a full chapter for this on [YDKJS: this & Object Prototypes - Chapter 6 - Behavior Delegation](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch6.md)
+
+## Exotic Objects
+
+We've learn that exotic are object that does not have the default behavior for one or more of the essential internal methods that must be supported by all objects. But What's does it means a which examples do we have?
+
+Let's check the spec
+
+- [Bound Function Exotic Objects](http://www.ecma-international.org/ecma-262/6.0/#sec-bound-function-exotic-objects)
+- [Array Exotic Objects](http://www.ecma-international.org/ecma-262/6.0/#sec-array-exotic-objects)
+- [String Exotic Objects](http://www.ecma-international.org/ecma-262/6.0/#sec-string-exotic-objects)
+- [Arguments Exotic Objects](http://www.ecma-international.org/ecma-262/6.0/#sec-arguments-exotic-objects)
+- [Integer Indexed Exotic Objects](http://www.ecma-international.org/ecma-262/6.0/#sec-integer-indexed-exotic-objects)
+- [Module Namespace Exotic Objects](http://www.ecma-international.org/ecma-262/6.0/#sec-module-namespace-exotic-objects)
+
+Let's explore a simple one, [String Exotic Objects](http://www.ecma-international.org/ecma-262/6.0/#sec-string-exotic-objects).
+
+### Object built-in methods
+
+The default Object "constructor" comes with several utility methods, let's check'em [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor).
+
+### Standard built-in objects
+
+Alright, objects everywhere, some of them come together with the language ( [built-in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) objects ) and some other are defined by the host application ( e.g [Web API](https://developer.mozilla.org/en-US/docs/Web/API) exposed by the browser )
+
+Let's concentrate on the [built-in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) for now.
