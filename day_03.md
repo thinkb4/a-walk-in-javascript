@@ -143,7 +143,7 @@ Everybody talks about the **prototype chain** but what's that?
 
 oh yeah ... wait!!!  ... what??
 
-Pleas MDN, help us
+Please MDN, help us
 
 > Nearly all objects in JavaScript are instances of Object; a typical object inherits properties (including methods) from Object.prototype, although these properties may be shadowed (a.k.a. overridden). However, an Object may be deliberately created for which this is not true (e.g. by Object.create(null)), or it may be altered so that this is no longer true (e.g. with Object.setPrototypeOf).
 >
