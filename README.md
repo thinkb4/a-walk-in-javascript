@@ -55,16 +55,17 @@ A lot of information has been written about JavaScript and EcmaScript since both
     - Relational operators
     - Destructuring
     - Operators Precedence
-- DAY 3
+    - Spread/Rest
+- [DAY 3](/day_03.md)
   - Objects explained
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Objects>
-    - Object properTies attributes (accessors, descriptors)
-    - Exotic Object <https://www.ecma-international.org/ecma-262/6.0/#sec-exotic-object>
-    - .. good practices
-  - Objects Built in methods
-    - ...
-    - ...
-    - .. good practices
+    - Objects, the big picture
+    - Syntax
+    - Object properties attributes (accessors, descriptors)
+    - Prototype
+    - Behavior Delegation
+    - Exotic Objects
+    - Object built-in methods
+    - Standard built-in objects
 - DAY 4
   - Arrays explained
     - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array>
