@@ -4,16 +4,11 @@
 
 - Indexed and Keyed Collections
   - Collections family
-  - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array>
-  - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays>
-  - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/array.md>
-  - <https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch3.md#array>
-  - Regular and typed arrays <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Indexed_collections_Arrays_and_typed_Arrays>
-  - .. good practices
-- Array Built in methods
-  - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/array.md>
-  - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals>
-  - .. good practices
+  - The Array Object
+  - Syntax
+  - Array Built-in methods
+  - Preliminary practice
+  - Exercises
 
 ### Collections family
 
@@ -114,3 +109,19 @@ Methods hierarchy
      > They provide a way to walk through the entries of an array, some of them accept a callback. Technically they don't modify the original array unless you explicitly define that behavior on the callback.
 
 Aaaand, we have all built-in methods Objects have.
+
+### Preliminary Practice
+
+Now let's have some time to practice creating, accessing, mutating, copying, iterating, merging arrays and entries.
+
+Here a list of resources we can use:
+
+- [MDN Array Examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Examples)
+- [W3resources array exercises](https://www.w3resource.com/javascript-exercises/javascript-array-exercises.php)
+- [W3School](https://www.w3schools.com/js/js_arrays.asp)
+
+### Exercises
+
+Let's open our test file [here](/src/day_4/arrays.test.js)
+Now open your terminal, make sure your at the project location and type `npm run test:watch`, this will start running your tests every time you make a change.
+Our task is to make ALL our DAY 4 tests pass ;)
