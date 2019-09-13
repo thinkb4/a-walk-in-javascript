@@ -92,7 +92,7 @@ Now we know an array can be initialized in two ways ( there are others we'll see
 
 ### Array Built-in methods
 
-The Array Object has a lot of functionalities packed ind and ready for use, they come in 2 flavor ( [déjà vu](https://en.wikipedia.org/wiki/D%C3%A9j%C3%A0_vu) ), [Static access](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods) and [Instance access](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2), and they will provide you the necessary tools to work efficiently with the collection.
+The Array Object has a lot of functionalities packed in and ready for use, they come in 2 flavor ( [déjà vu](https://en.wikipedia.org/wiki/D%C3%A9j%C3%A0_vu) ), [Static access](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods) and [Instance access](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2), and they will provide you the necessary tools to work efficiently with the collection.
 
 Methods hierarchy
 
