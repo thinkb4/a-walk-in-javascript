@@ -123,5 +123,5 @@ Here a list of resources we can use:
 ### Exercises
 
 Let's open our test file [here](/src/day_4/arrays.test.js)
-Now open your terminal, make sure your at the project location and type `npm run test:watch`, this will start running your tests every time you make a change.
+Now open your terminal, make sure you're at the project location and type `npm run test:watch`, this will start running your tests every time you make a change.
 Our task is to make ALL our DAY 4 tests pass ;)
