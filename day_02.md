@@ -122,7 +122,7 @@ a = b * 2;
 
 is built by [4 simpler expressions](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/ch1.md#expressions).
 
-You can learn more from his [YDKJS - Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#statements--expressions) book online, also take a look at a particularly little known characteristic that [all Statements have Completion Values](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#statement-completion-values) ( yup, as many of us I learned this quite late :,( )
+You can learn more from his [YDKJS - Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#statements--expressions) book online, also take a look at a particularly little known characteristic that [all Statements have Completion Values](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20&%20grammar/ch5.md#statement-completion-values) ( yup, as many of us I learned this quite late :,( )
 
 ### Semantics
 
