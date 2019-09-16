@@ -66,18 +66,14 @@ A lot of information has been written about JavaScript and EcmaScript since both
     - Exotic Objects
     - Object built-in methods
     - Standard built-in objects
-- DAY 4
-  - Arrays explained
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array>
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays>
-    - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/array.md>
-    - <https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch3.md#array>
-    - Regular and typed arrays <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Indexed_collections_Arrays_and_typed_Arrays>
-    - .. good practices
-  - Array Built in methods
-    - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/array.md>
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals>
-    - .. good practices
+- [DAY 4](/day_04.md)
+  - Indexed and Keyed Collections
+    - Collections family
+    - The Array Object
+    - Syntax
+    - Array Built-in methods
+    - Preliminary practice
+    - Exercises
 - DAY 5
   - this Keyword
     - <https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch1.md>
