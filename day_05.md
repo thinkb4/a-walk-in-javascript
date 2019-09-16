@@ -9,7 +9,7 @@
   - Exception handling
   - Iteration
   - Arbitrary Jumps
-  - Iterables and the iteration [protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
+  - The Iterable and the Iterator Protocol
   - Preliminary Practice
   - Exercises
 
@@ -54,11 +54,14 @@ Let's start with organizing them:
 - [conditional-operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) ( a.k.a. ternary operator )
 
 ### [Grouping](https://www.ecma-international.org/ecma-262/6.0/#sec-block) / lexical scope delimiting
+
  > *Remember JavaScript prior to ECMAScript2015 (ES6) doesn't have block scope.*
+
 - [Block](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)
 - [Empty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty)
 
 ### Exception handling
+
 - [throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
 - [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
 
@@ -76,8 +79,54 @@ Let's start with organizing them:
 
 - [labels](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#labels) *yup, js has labels (－‸ლ)*
 
-### Iterables and the iteration protocol
-odfoasfofosd
+### The Iterable and the Iterator Protocol
+
+Until ES6, all iteration adhered to the [run-to-completion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop#Run-to-completion) model where essentially there was no mechanism to pause/resume a loop. You could interrupt it or wait until the iteration finished, but no granular control over the iteration steps pace was possible. In order to evolve, many of the features introduced in ES6 where protocols, and some of the existing features started using them under the hood to be both backwards compatible and scalable for the future.
+
+Here is how ECMAScript spec defines them:
+
+- [[ @@iterator ] ( )](https://www.ecma-international.org/ecma-262/6.0/#sec-@@iterator)
+- [Common Iteration Interfaces](https://www.ecma-international.org/ecma-262/6.0/#sec-common-iteration-interfaces)
+- [Operations on Iterator Objects](https://www.ecma-international.org/ecma-262/6.0/#sec-operations-on-iterator-objects)
+
+But they might be a little harsh at this moment, why don't we take a look at MDN for a friendlier description?
+
+#### Iterable Protocol
+
+> The **iterable protocol** allows JavaScript objects to define or customize their iteration behavior, such as what values are looped over in a for..of construct. Some built-in types are built-in iterables with a default iteration behavior, such as Array or Map, while other types (such as Object) are not.
+>
+> In order to be **iterable**, an object must implement the **@@iterator** method, meaning that the object (or one of the objects up its prototype chain) must have a property with a **@@iterator** key which is available via constant `Symbol.iterator`
+>
+> Source: [MDN - The iterable protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol)
+
+#### Iterator Protocol
+
+> The **iterator protocol** defines a standard way to produce a sequence of values (either finite or infinite), and potentially a return value when all values have been generated.
+>
+> An object is an iterator when it implements a `next()` method...
+>
+> Source: [MDN - The iterator protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol)
+
+Essentially this protocols define and interface to iterate in a consistent way across implementations opening the door for you to define your own iterables taking control of the iteration steps in super granular way.
+
+Also a big section of the Chapter 3 of Your Don't Know Js - ES6 & Beyond is dedicated to iterators. Let's read how it starts:
+
+> An iterator is a structured pattern for pulling information from a source in one-at-a-time fashion. This pattern has been around programming for a long time. And to be sure, JS developers have been ad hoc designing and implementing iterators in JS programs since before anyone can remember, so it's not at all a new topic.
+>
+> What ES6 has done is introduce an implicit standardized interface for iterators. Many of the built-in data structures in JavaScript will now expose an iterator implementing this standard. And you can also construct your own iterators adhering to the same standard, for maximal interoperability.
+>
+> Source: [YDKJS - ES6 & Beyond - Ch 3](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch3.md#iterators)
+
+We can find many iterable examples [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#Iterable_examples).
+
+Another interesting reading is "[A Simple Guide to ES6 Iterators in JavaScript with Examples"](https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e) by "[Brandon Morelli](https://codeburst.io/@bmorelli25)"
+
+You might ask "**what the hell are those @@**?"
+They're called "Well Known Symbols" and you can read more here:
+
+- [YDKJS - ES6 & Beyond - Ch 7](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch7.md#well-known-symbols)
+- [MDN - well-known symbols](https://developer.mozilla.org/en-US/docs/Glossary/Symbol#Well-known_symbols)
+- [ECMAScript 2015 - Well Known Symbols](https://www.ecma-international.org/ecma-262/6.0/#sec-well-known-symbols)
 
 ## Preliminary Practice
 
@@ -91,6 +140,17 @@ Here a list of resources we can use:
 
 ## Exercises
 
-Let's open our test files ....
-Now open your terminal, make sure you're at the project location and type `npm run test:watch`, this will start running your tests every time you make a change.
-Our task is to make ALL our DAY 5 tests pass ;)
+Let's open our test files:
+
+- [Branching](/src/day_05/branching.test.js)
+- [Grouping](/src/day_05/grouping.test.js)
+- [Exception handling](/src/day_05/exceptionHandling.test.js)
+- [Iteration](/src/day_05/iteration.test.js)
+- [Iterable and Iterators](/src/day_05/iterableAndIterators.test.js)
+
+Now open your terminal.
+1. Make sure you're at the project location
+2. If you didn't installed all the packages yet the run `npm i` for a fresh dependency install, or `npm ci` for an installation based on the lock file.
+3. Type `npm run test:watch`, this will start running your tests every time you make a change.
+
+**Our task is to make ALL our DAY 5 tests pass ;)**

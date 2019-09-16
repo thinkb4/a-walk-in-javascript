@@ -122,6 +122,17 @@ Here a list of resources we can use:
 
 ### Exercises
 
-Let's open our test file [here](/src/day_4/arrays.test.js)
-Now open your terminal, make sure you're at the project location and type `npm run test:watch`, this will start running your tests every time you make a change.
-Our task is to make ALL our DAY 4 tests pass ;)
+Let's open our test file [here](/src/day_04/arrays.test.js)
+
+## Exercises
+
+Let's open our test files:
+
+- [Arrays](/src/day_04/arrays.test.js)
+
+Now open your terminal.
+1. Make sure you're at the project location
+2. If you didn't installed all the packages yet the run `npm i` for a fresh dependency install, or `npm ci` for an installation based on the lock file.
+3. Type `npm run test:watch`, this will start running your tests every time you make a change.
+
+**Our task is to make ALL our DAY 4 tests pass ;)**
