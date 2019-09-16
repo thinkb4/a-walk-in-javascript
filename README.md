@@ -74,17 +74,17 @@ A lot of information has been written about JavaScript and EcmaScript since both
     - Array Built-in methods
     - Preliminary practice
     - Exercises
-- DAY 5
+- [DAY 5](/day_05.md)
   - Control Structures
-    - <https://en.wikibooks.org/wiki/JavaScript/Control_structures>
-    - <https://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-statements-and-declarations>
-    - .. good practices
-  - Iteration Statements
-    - <https://www.ecma-international.org/ecma-262/6.0/#sec-iteration-statements>
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for> and others
-    - Introduce **iterable** concept, Iteration protocols
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols>
-    - .. good practices
+    - General definition
+    - Branching
+    - Grouping
+    - Exception handling
+    - Iteration
+    - Arbitrary Jumps
+    - The Iterable and the Iterator Protocol
+    - Preliminary Practice
+    - Exercises
 - DAY 6
   - Functions
     - <https://www.ecma-international.org/ecma-262/6.0/#sec-function-definitions>
