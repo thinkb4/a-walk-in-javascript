@@ -151,7 +151,7 @@ Let's open our test files:
 Now open your terminal.
 
 1. Make sure you're at the project location
-2. If you didn't installed all the packages yet the run `npm i` for a fresh dependency install, or `npm ci` for an installation based on the lock file.
+2. If you didn't install all the packages yet the run `npm i` for a fresh dependency install, or `npm ci` for an installation based on the lock file.
 3. Type `npm run test:watch`, this will start running your tests every time you make a change.
 
 **Our task is to make ALL our DAY 5 tests pass ;)**
