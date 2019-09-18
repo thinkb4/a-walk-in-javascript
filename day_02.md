@@ -219,7 +219,8 @@ Just like in math, in computer programming there's a set of rules or conventions
 Javascript is not an exception and we cas see this table very well explained at [MDN web Docs - Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
 
 ### The case of the ... ( spread/rest "operator" )
-A new syntactic element was introduced in ES6 but surprisingly it's not listed as part of the operators but rather as a left-hand-side expression, specifically an assignment expression. 
+
+A new syntactic element was introduced in ES6 but surprisingly it's not listed as part of the operators but rather as a left-hand-side expression, specifically an assignment expression.
 
 You can search for **SpreadElement** on the [spec](http://www.ecma-international.org/ecma-262/6.0/) to see how it behaves depending on the context.
 
