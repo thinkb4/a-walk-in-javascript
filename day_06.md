@@ -62,7 +62,7 @@ Now let's see if MDN has something more to say:
 > In JavaScript, functions are **first-class objects**, because they can have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called. In brief, they are Function objects.
 > Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 
-That's a great reminder of something important. In JS, functions ar [first-class citizens](https://en.wikipedia.org/wiki/First-class_citizen), therefore they can:
+That's a great reminder of something important. In JS, functions are [first-class citizens](https://en.wikipedia.org/wiki/First-class_citizen), therefore they can:
 
 - be assigned to a variable
 - be formal parameters of a function
@@ -114,7 +114,7 @@ Let's see some examples in [MDN - Constructor vs declaration vs expression](http
 
 ### Properties of the Function object in the prototype chain
 
-As we already learn, a `function` is and `object`, therefore it benefits from the `prototype` chain defined properties, which can be any of the ECMAScript types we know.
+As we already learn, a `function` is an `object`, therefore it benefits from the `prototype` chain defined properties, which can be any of the ECMAScript types we know.
 Let's take a look at [MDN - Function prototype object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function#Function_prototype_object)
 
 ### Arity & formal parameters
@@ -173,7 +173,7 @@ Did you note something weird about those terms `arguments` and `parameters` that
 
 In short, the `parameters` are the **signature**, or the variables you define at **function declaration time**, and the `arguments` are the `values` you pass to the function at **function call time**.
 
-That said, `arguments` itself has a spacial meaning in JavaScript. Now let's see more about how JavaScript handles arguments, provide a new way in ES6 to handle those arguments in a consistent way, and provides a feature to define default values for the formal parameters ( like other languages do )
+That said, `arguments` itself has a special meaning in JavaScript. Now let's see more about how JavaScript handles arguments, provides a new way in ES6 to handle those arguments in a consistent way, and provides a feature to define default values for the formal parameters ( like other languages do )
 
 - [The `arguments` thing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Using_the_arguments_object) ( deprecated 👎)
 - [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
@@ -182,13 +182,13 @@ That said, `arguments` itself has a spacial meaning in JavaScript. Now let's see
 ### Functions as properties of an object
 
 We've learned the concept of [first-class citizens](https://en.wikipedia.org/wiki/First-class_citizen), therefore we can assign a function to a variable .... what if that variable happens to be an object property?
-Now we're talking, we could create an object with many values of any ECMAScript valid type, including functions, that might manipulate values of the same or other objects!!!. This functions are sometimes called "methods" but that might be an arguable statement. ( the door for Object Oriented Programming has been opened )
+Now we're talking, we could create an object with many values of any ECMAScript valid type, including functions, that might manipulate values of the same or other objects!!!. This functions are sometimes called "methods" but that might be an arguable statement. (the door for Object Oriented Programming has been opened )
 
 Let's get some insights from [MDN - Method definitions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Method_definitions)
 
 ### IIFE
 
-Do you remember what an [expression](https://en.wikipedia.org/wiki/Expression_(computer_science)) is? Now what if I tell you there's a particular expression that let's you declare a function in an expression that immediately execute that function?
+Do you remember what an [expression](https://en.wikipedia.org/wiki/Expression_(computer_science)) is? Now what if I tell you there's a particular expression that let's you declare a function in an expression that immediately executes that function?
 Many JavaScripts common patterns are built around that feature called **Immediately Invoked Function Expression** best known by its acronym [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
 ```javascript
@@ -222,9 +222,9 @@ console.log(b); // [2, 3, 4, 5, 6]
 
 ### Side Effects
 
-> Hey function you can **explicitly** ( because I told you so ) or **implicitly** ( because someone told you so, even without knowing they told you so ) **change** everything you can get your claws into, even without letting anyone know about that.
+> Hey function you can **explicitly** (because I told you so) or **implicitly** (because someone told you so, even without knowing they told you so) **change** everything you can get your claws into, even without letting anyone know about that.
 
-Scary huh? But also powerful, it all depends on the agreement you have with the rest of the engineers ( scary huh ? :P ). That said, even here a whole world of paradigms lay on top of that [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) thing, like [Imperative programming](https://en.wikipedia.org/wiki/Imperative_programming)
+Scary huh? But also powerful, it all depends on the agreement you have with the rest of the engineers (scary huh ? :P). That said, even here a whole world of paradigms lay on top of that [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) thing, like [Imperative programming](https://en.wikipedia.org/wiki/Imperative_programming)
 
 ```javascript
 
@@ -502,7 +502,7 @@ JavaScript use this scope paradigm
  * A value can be assigned to a variable in two ways
  *      BY VALUE -> for primitives -> the data is duplicated and then the variable points to that new duplicated data
  *          var a = 2;
- *          var b = a; -> a new numeric data is created and b will point tho this new data
+ *          var b = a; -> a new numeric data is created and b will point to this new data
  *                        there's no relationship between the 2 of a and the 2 of b
  *
  *      BY REFERENCE -> for compound (objects) -> the variable points the the data
@@ -576,7 +576,7 @@ console.log(b); // and this?
 
 ## Hoisting
 
-Hoisting is a concept described by [Douglas Crockford](https://crockford.com/about.html) many years ago, way before ES6 was even close to be dreamed. That concept was particularly significant in ECMAScript < 5.x adn ES6 introduced a couple of changes in the syntax that directly affects how that concept is defined.
+Hoisting is a concept described by [Douglas Crockford](https://crockford.com/about.html) many years ago, way before ES6 was even close to be dreamed. That concept was particularly significant in ECMAScript < 5.x and ES6 introduced a couple of changes in the syntax that directly affects how that concept is defined.
 Kyle Simpson dedicated a full section for that and, truly, there's no better explanation I can share with you than that.
 
 Let's see [YDKJS - Scope & Closures - Hoisting](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/scope%20%26%20closures/ch4.md)
@@ -735,7 +735,7 @@ with (Math){x = cos(2)};
 ### Other
 
 - A great analysis of a memory leak example related to inaccurate use of closures [See here](http://point.davidglasser.net/2013/06/27/surprising-javascript-memory-leak.html)
-- The best and more detailed book I've ever read about scope and closures in JS [You Don't Know JS: Scope & Closures](https://github.com/getify/You-Dont-Know-JS/tree/master/scope%20%26%20closures)
+- The best and more detailed book I've ever read about scope and closures in JS [You Don't Know JS: Scope & Closures](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed/scope%20%26%20closures)
 
 ### Preliminary Practice
 

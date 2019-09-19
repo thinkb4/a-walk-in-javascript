@@ -216,7 +216,7 @@ If you want to dive into how operators are defined by the spec, there's a comple
 ### Operators precedence
 
 Just like in math, in computer programming there's a set of rules or conventions to define which procedure to perform first in order to evaluate an expression. Depending on the order we might have different results.
-Javascript is not an exception and we cas see this table very well explained at [MDN web Docs - Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
+Javascript is not an exception and we can see this table very well explained at [MDN web Docs - Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
 
 ### The case of the ... ( spread/rest "operator" )
 
