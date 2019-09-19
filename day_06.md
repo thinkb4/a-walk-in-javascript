@@ -238,7 +238,7 @@ a.forEach((v,i) => {
 });
 
 console.log(b); // [2, 3, 4, 5, 6] NICE!!!
-console.log(b); // [2, 3, 4, 5, 6] OOPS!
+console.log(a); // [2, 3, 4, 5, 6] OOPS! we change it!!!
 
 ```
 
