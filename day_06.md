@@ -173,7 +173,7 @@ Did you note something weird about those terms `arguments` and `parameters` that
 
 In short, the `parameters` are the **signature**, or the variables you define at **function declaration time**, and the `arguments` are the `values` you pass to the function at **function call time**.
 
-That said, `arguments` itself has a special meaning in JavaScript. Now let's see more about how JavaScript handles arguments, provides a new way in ES6 to handle those arguments in a consistent way, and provides a feature to define default values for the formal parameters ( like other languages do )
+That said, `arguments` itself has a special meaning in JavaScript. Now let's see more about how JavaScript handles arguments, provides a new way in ES6 to handle those arguments in a consistent way, and provides a feature to define default values for the formal parameters (like other languages do)
 
 - [The `arguments` thing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Using_the_arguments_object) ( deprecated 👎)
 - [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
