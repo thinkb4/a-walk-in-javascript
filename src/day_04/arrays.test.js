@@ -75,12 +75,6 @@ describe('DAY 4: Test Arrays', () => {
         expect(array.length).toBe(5);
     });
 
-    it('Mutate Array length to be 5', () => {
-        let array = [42, 42, 42, 42, 42, 42];
-        // use a mutator method to remove elements
-        expect(array.length).toBe(5);
-    });
-
     it('Remove the first element of the array', () => {
         let array = ['a', 'b', 'c', 'd'];
         // use a method to remove it

@@ -74,32 +74,32 @@ A lot of information has been written about JavaScript and EcmaScript since both
     - Array Built-in methods
     - Preliminary practice
     - Exercises
-- DAY 5
-  - this Keyword
-    - <https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch1.md>
-    - <https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md>
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this>
-    - BIND
-    - APPLY
-    - CALL
-    - ..
-    - .. good practices
+- [DAY 5](/day_05.md)
   - Control Structures
-    - <https://en.wikibooks.org/wiki/JavaScript/Control_structures>
-    - <https://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-statements-and-declarations>
-    - .. good practices
-  - Iteration Statements
-    - <https://www.ecma-international.org/ecma-262/6.0/#sec-iteration-statements>
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for> and others
-    - Introduce **iterable** concept, Iteration protocols
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols>
-    - .. good practices
+    - General definition
+    - Branching
+    - Grouping
+    - Exception handling
+    - Iteration
+    - Arbitrary Jumps
+    - The Iterable and the Iterator Protocol
+    - Preliminary Practice
+    - Exercises
 - DAY 6
   - Functions
     - <https://www.ecma-international.org/ecma-262/6.0/#sec-function-definitions>
     - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions>
     - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/functions%20-%20generators%20-%20scope%20-%20closure.md>
     - First-Class Citizens
+    - ..
+    - .. good practices
+  - this Keyword
+    - <https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch1.md>
+    - <https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch2.md>
+    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this>
+    - BIND
+    - APPLY
+    - CALL
     - ..
     - .. good practices
   - Execution context
@@ -149,7 +149,7 @@ A lot of information has been written about JavaScript and EcmaScript since both
   - The runtimes
     - Web Browser
     - Node
-    - MIXED ENVIRONMENT <https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/apA.md>
+    - MIXED ENVIRONMENT <https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/apA.md>
   - Javascript and the web
     - V8, SpiderMonkey, Chakra, WebKit, Hermes
     - HTML
