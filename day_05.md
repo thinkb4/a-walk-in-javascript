@@ -33,7 +33,7 @@ Now it's clear that a control structure will:
 
 - analyze the current state of the program
 - operate on that state
-- produce a result ( which might or might not change the state depending on the executed operations)
+- produce a result (which might or might not change the state depending on the executed operations)
 
 Although `function` construct, and asynchronous routines like `async/await`, `promise` and timers like `setTimeout` are ways of making decisions and changing the state of a the program, they're not strictly considered control structures. That said, they're so important to know that we're going to see them in the next days.
 
