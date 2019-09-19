@@ -739,16 +739,25 @@ with (Math){x = cos(2)};
 
 ### Preliminary Practice
 
-Now let's have some time to practice creating, accessing, mutating, copying, iterating, merging arrays and entries.
+Now let's have some time to practice. Here a list of resources we can use:
 
-Here a list of resources we can use:
+- [W3resources exercises](https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php)
+- [W3School](https://www.w3schools.com/js/js_functions.asp)
+- [W3School](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_functions1)
 
-- [MDN Array Examples](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Examples)
-- [W3resources array exercises](https://www.w3resource.com/javascript-exercises/javascript-array-exercises.php)
-- [W3School](https://www.w3schools.com/js/js_arrays.asp)
+## Exercises
 
-### Exercises
+Let's open our test files:
 
-Let's open our test file [here](/src/day_4/arrays.test.js)
-Now open your terminal, make sure you're at the project location and type `npm run test:watch`, this will start running your tests every time you make a change.
-Our task is to make ALL our DAY 4 tests pass ;)
+- [Functions](/src/day_06/functions.test.js)
+- [Scope](/src/day_06/scope.test.js)
+- [Hoisting](/src/day_06/hoisting.test.js)
+- [Closure](/src/day_06/closure.test.js)
+
+Now open your terminal.
+
+1. Make sure you're at the project location
+2. If you didn't install all the packages yet the run `npm i` for a fresh dependency install, or `npm ci` for an installation based on the lock file.
+3. Type `npm run test:watch`, this will start running your tests every time you make a change.
+
+**Our task is to make ALL our DAY 6 tests pass ;)**
