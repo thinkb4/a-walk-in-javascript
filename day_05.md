@@ -39,7 +39,7 @@ Although `function` construct, and asynchronous routines like `async/await`, `pr
 
 Note that some languages require a final keyword whilst JavaScript (and others) doesn't. ( [See here](https://en.wikipedia.org/wiki/Control_flow#Control_structures_in_practice) )
 
-Also interesting to note that "Control Structures" or "control Flow" is not part of the organization of the ECMAScript standard, it rather organize them in terms of `statements` which make total sense, as it's the spec of the language and not a programming manual.
+It's also interesting to note that "Control Structures" or "control Flow" is not part of the organization of the ECMAScript standard, it rather organizes them in terms of `statements` which make total sense, as it's the spec of the language and not a programming manual.
 
 Let's start with organizing them:
 
@@ -103,11 +103,24 @@ But they might be a little harsh at this moment, why don't we take a look at MDN
 
 > The **iterator protocol** defines a standard way to produce a sequence of values (either finite or infinite), and potentially a return value when all values have been generated.
 >
-> An object is an iterator when it implements a `next()` method...
+> An object is an iterator when it implements a `next()` method with the following semantics:
 >
+> **Property:**
+> `next`
+>
+> **Value**
+> A zero arguments function that returns an object with at least the following two properties:
+>
+> - `done` (boolean)
+>   - Has the value `true` if the iterator is past the end of the iterated sequence. In this case value optionally specifies the return `value` of the iterator.
+>   - Has the value `false` if the iterator was able to produce the next value in the sequence. This is equivalent of not specifying the `done` property altogether.
+> - `value` - any JavaScript value returned by the iterator. Can be omitted when `done` is `true`.
+>
+> The `next` method always has to return an object with appropriate properties including `done` and `value`. If a non-object value gets returned (such as `false` or `undefined`), a TypeError ("iterator.next() returned a non-object value") will be thrown.
+> 
 > Source: [MDN - The iterator protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol)
 
-Essentially this protocols define and interface to iterate in a consistent way across implementations opening the door for you to define your own iterables taking control of the iteration steps in super granular way.
+Essentially this protocols defines and interface to iterate in a consistent way across implementations opening the door for you to define your own iterables taking control of the iteration steps in a super granular way.
 
 Also a big section of the Chapter 3 of Your Don't Know Js - ES6 & Beyond is dedicated to iterators. Let's read how it starts:
 
@@ -151,7 +164,7 @@ Let's open our test files:
 Now open your terminal.
 
 1. Make sure you're at the project location
-2. If you didn't install all the packages yet the run `npm i` for a fresh dependency install, or `npm ci` for an installation based on the lock file.
+2. If you didn't install all the packages yet then run `npm i` for a fresh dependency install, or `npm ci` for an installation based on the lock file.
 3. Type `npm run test:watch`, this will start running your tests every time you make a change.
 
 **Our task is to make ALL our DAY 5 tests pass ;)**

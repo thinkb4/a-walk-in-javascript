@@ -94,8 +94,8 @@ A lot of information has been written about JavaScript and EcmaScript since both
     - ..
     - .. good practices
   - this Keyword
-    - <https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch1.md>
-    - <https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md>
+    - <https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch1.md>
+    - <https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch2.md>
     - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this>
     - BIND
     - APPLY
@@ -149,7 +149,7 @@ A lot of information has been written about JavaScript and EcmaScript since both
   - The runtimes
     - Web Browser
     - Node
-    - MIXED ENVIRONMENT <https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/apA.md>
+    - MIXED ENVIRONMENT <https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/apA.md>
   - Javascript and the web
     - V8, SpiderMonkey, Chakra, WebKit, Hermes
     - HTML
