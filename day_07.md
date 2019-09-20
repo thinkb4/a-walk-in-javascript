@@ -14,9 +14,7 @@
   - Semantic Differences
 - Arrow Functions
 - Generators
-  - ..
-  - ..
-  - .. good practices
+- Exercises
 
 ## `this` Keyword
 
@@ -127,7 +125,7 @@ When adding `'use strict';` the following cases will throw an Error:
 ### Syntax
 
 ```javascript
-(param1, param2, …, paramN) => { statements } 
+(param1, param2, …, paramN) => { statements }
 (param1, param2, …, paramN) => expression
 // equivalent to: => { return expression; }
 
@@ -143,7 +141,7 @@ params => ({foo: bar})
 
 // Rest parameters and default parameters are supported
 (param1, param2, ...rest) => { statements }
-(param1 = defaultValue1, param2, …, paramN = defaultValueN) => { 
+(param1 = defaultValue1, param2, …, paramN = defaultValueN) => {
 statements }
 
 // Destructuring within the parameter list is also supported
@@ -158,13 +156,154 @@ Let's take a look at [YDKJS - ES6 & Beyond - chapter 2](https://github.com/getif
 
 ---
 
-### Preliminary Practice
+## Generators
 
-Now let's have some time to practice. Here a list of resources we can use:
+So far we've seen (except for the iterators) only **[run-to-completion](https://en.wikipedia.org/wiki/Run_to_completion_scheduling)** examples of code. It means, "the execution won't stop until it's done or fails".
+What if I tell you there's a feature that let you define a function capable of being paused midway and resumed later?
 
-- A
-- B
-- C
+Together with [`iterators`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol) ES6 introduced something called `generators`.
+
+> The Generator object is returned by a [generator function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*) and it conforms to both the [iterable protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterable_protocol) and the [iterator protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol).
+
+There are 2 ways to create a [generator object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
+
+- [function* expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+
+  ```javascript
+  function* name([param[, param[, ... param]]]) {
+    statements
+  }
+  ```
+
+- [GeneratorFunction constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction)
+
+  ```javascript
+  let GeneratorFunction = Object.getPrototypeOf(function*(){}).constructor
+  let myGenerator = new GeneratorFunction ([arg1[, arg2[, ...argN]],] functionBody)
+  ```
+
+> **Note** that GeneratorFunction is **not a global object**.
+>
+> `generator` function objects created with the `GeneratorFunction` constructor are parsed when the function is created. This is less efficient than declaring a generator function with a `function* expression` and calling it within your code, because such functions are parsed with the rest of the code.
+>
+> Source: [MDN GeneratorFunction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction)
+
+Since this is a particularly complex topic, with several nuances, let's try to understand them through examples:
+
+### Example of execution sequence
+
+```javascript
+/**
+ *
+ * @param {number} initialValue
+ */
+function* bottlesOfBeer (initialValue) {
+  let bob = initialValue;
+  let lastMessage = `No more bottles of beer on the wall, no more bottles of beer. 
+Go to the store and buy some more, ${bob} bottles of beer on the wall.`;
+
+  while (true) {
+    console.log(`${bob} bottles of beer on the wall, ${bob} bottles of beer.`);
+
+    yield bob--;
+
+    console.log(`Take one down and pass it around, ${bob} bottles of beer on the wall.`);
+
+    if (bob < 1) {
+        bob = initialValue;
+        console.log(lastMessage);
+    }
+  }
+}
+
+let bob = bottlesOfBeer(100);
+
+bob.next();
+// log -> 5 bottles of beer on the wall, 5 bottles of beer.
+// statement completion value -> {value: 5, done: false}
+
+bob.next();
+// log -> Take one down and pass it around, 4 bottles of beer on the wall.
+//        4 bottles of beer on the wall, 4 bottles of beer.
+// statement completion value -> {value: 4, done: false}
+
+// ... 3 more calls
+
+bob.next();
+// log -> Take one down and pass it around, 0 bottles of beer on the wall.
+//        No more bottles of beer on the wall, no more bottles of beer. 
+//        Go to the store and buy some more, 5 bottles of beer on the wall.
+//        5 bottles of beer on the wall, 5 bottles of beer.
+// statement completion value -> {value: 5, done: false}
+
+// guess what happens now?
+
+```
+
+### Passing values through `next`
+
+```javascript
+/**
+ *
+ */
+function* passingValToNext () {
+  let val = 10;
+
+  while (true) {
+    console.log(`UP val=${val}`);
+
+    val = yield val + 10;
+
+    console.log(`DOWN val=${val}`);
+  }
+}
+```
+
+### Sample combining initial value and passing value to next
+
+```javascript
+/**
+ *
+ * @param {Number} expectedTotal
+ * @returns {Object} Iterator
+ */
+function* calculateDownloadProgress (expectedTotal) {
+  let totalDownloaded = 0;
+  let newItems = 0;
+
+  while (true) {
+    totalDownloaded += newItems || 0; // lazy verification for the value passed by `next`
+
+    let percent = ((totalDownloaded / expectedTotal) * 100).toFixed(2);
+
+    newItems = yield `${percent}%`;
+  }
+}
+```
+
+### DIY
+
+```javascript
+/**
+ *
+ */
+function* spinGen() {
+  while(true){
+    yield* ['\\', '|', '/', '--'];
+  }
+}
+
+// now you add the code to see the output
+```
+
+Let's take some time to read and discuss:
+
+- [ECMAScript Generator Function](https://www.ecma-international.org/ecma-262/6.0/#sec-generatorfunction)
+- [YDKJS - ES6 & Beyond - CH3 - Generators](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch3.md#generators) - by Kyle Simpson
+- [The Basics Of ES6 Generators](https://davidwalsh.name/es6-generators) - By Kyle Simpson
+- [2ality - ES6 generators in depth](https://2ality.com/2015/03/es6-generators.html) -  by Dr. Axel Rauschmayer
+
+---
 
 ## Exercises
 
