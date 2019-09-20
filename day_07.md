@@ -29,7 +29,7 @@ Why this intro? because there are tons of articles regarding `this` but everythi
 
 ### Resolving `this`
 
-Let's take a look a the following chapters of **You Don't Know JS: this & Object Prototypes - 1st Edition**
+Let's take a look at the following chapters of **You Don't Know JS: this & Object Prototypes - 1st Edition**
 
 - [Chapter 1: this Or That?](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch1.md)
 - [Chapter 2: this All Makes Sense Now!](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch2.md)
@@ -47,13 +47,13 @@ In the other hand, MDN describes `this` on the Operators section
 
 ### Explicitly binding `this` through prototype methods
 
-Now we've learned that `this` has specific rules and is resolved at run-time, and we saw that the `function` prototype has 3 methods to explicitly define where to point when `this` needs to be resolved during it's execution.
+Now we've learned that `this` has specific rules and it's resolved at run-time, and we saw that the `function` prototype has 3 methods to explicitly define where to point when `this` needs to be resolved during it's execution.
 
 - [Function.prototype.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
 - [Function.prototype.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 - [Function.prototype.call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
 
-Now, there's a catch!!! it seems that depending on a thing called **mode** that depending on of it's [strict](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) or [non-strict](https://developer.mozilla.org/en-US/docs/Glossary/Sloppy_mode) (a.k.a. Sloppy) it'll alter the semantics and behavior of many things including `this`.
+Now, there's a catch!!! it seems that depending on a thing called **mode**, that depending on it's [strictness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) or [non-strictness](https://developer.mozilla.org/en-US/docs/Glossary/Sloppy_mode) (a.k.a. Sloppy) it'll alter the semantics and behavior of many things including `this`.
 
 ---
 
