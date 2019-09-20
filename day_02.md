@@ -122,7 +122,7 @@ a = b * 2;
 
 is built by [4 simpler expressions](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/ch1.md#expressions).
 
-You can learn more from his [YDKJS - Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#statements--expressions) book online, also take a look at a particularly little known characteristic that [all Statements have Completion Values](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20&%20grammar/ch5.md#statement-completion-values) ( yup, as many of us I learned this quite late :,( )
+You can learn more from his [YDKJS - Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#statements--expressions) book online, also take a look at a particularly little known characteristic that [all Statements have Completion Values](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#statement-completion-values) ( yup, as many of us I learned this quite late :,( )
 
 ### Semantics
 
@@ -216,10 +216,11 @@ If you want to dive into how operators are defined by the spec, there's a comple
 ### Operators precedence
 
 Just like in math, in computer programming there's a set of rules or conventions to define which procedure to perform first in order to evaluate an expression. Depending on the order we might have different results.
-Javascript is not an exception and we cas see this table very well explained at [MDN web Docs - Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
+Javascript is not an exception and we can see this table very well explained at [MDN web Docs - Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
 
 ### The case of the ... ( spread/rest "operator" )
-A new syntactic element was introduced in ES6 but surprisingly it's not listed as part of the operators but rather as a left-hand-side expression, specifically an assignment expression. 
+
+A new syntactic element was introduced in ES6 but surprisingly it's not listed as part of the operators but rather as a left-hand-side expression, specifically an assignment expression.
 
 You can search for **SpreadElement** on the [spec](http://www.ecma-international.org/ecma-262/6.0/) to see how it behaves depending on the context.
 

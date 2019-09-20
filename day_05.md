@@ -117,7 +117,7 @@ But they might be a little harsh at this moment, why don't we take a look at MDN
 > - `value` - any JavaScript value returned by the iterator. Can be omitted when `done` is `true`.
 >
 > The `next` method always has to return an object with appropriate properties including `done` and `value`. If a non-object value gets returned (such as `false` or `undefined`), a TypeError ("iterator.next() returned a non-object value") will be thrown.
-> 
+>
 > Source: [MDN - The iterator protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol)
 
 Essentially this protocols defines and interface to iterate in a consistent way across implementations opening the door for you to define your own iterables taking control of the iteration steps in a super granular way.
