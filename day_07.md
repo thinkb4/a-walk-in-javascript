@@ -150,7 +150,7 @@ f(); // 6
 
 ```
 
-One of the most expected and misused features of ES6 is the Arrow Function. Undoubtedly powerful it might also derive in a headache inf you don't really know how they work and which are the difference between the full body notation and the arrow notation.
+One of the most expected and misused features of ES6 is the Arrow Function. Undoubtedly powerful it might also derive in a headache if you don't really know how they work and which are the difference between the full body notation and the arrow notation.
 
 Let's take a look at [YDKJS - ES6 & Beyond - chapter 2](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch2.md#arrow-functions)
 
@@ -196,6 +196,7 @@ Since this is a particularly complex topic, with several nuances, let's try to u
 /**
  *
  * @param {number} initialValue
+ * @returns {Object} Generator
  */
 function* bottlesOfBeer (initialValue) {
   let bob = initialValue;
@@ -245,6 +246,7 @@ bob.next();
 ```javascript
 /**
  *
+ * @returns {Object} Generator
  */
 function* passingValToNext () {
   let val = 10;
@@ -257,6 +259,22 @@ function* passingValToNext () {
     console.log(`DOWN val=${val}`);
   }
 }
+
+let pvtn = passingValToNext();
+// statement completion value -> passingValToNext {<suspended>}
+
+pvtn.next(2);
+// log ->  UP val=10
+// statement completion value -> {value: 20, done: false}
+
+pvtn.next(7);
+// log ->  DOWN val=7
+// log ->  UP val=7
+// statement completion value -> {value: 17, done: false}
+
+// WAIT! WHAT??!!!!
+// how does it work?
+
 ```
 
 ### Sample combining initial value and passing value to next
@@ -265,7 +283,7 @@ function* passingValToNext () {
 /**
  *
  * @param {Number} expectedTotal
- * @returns {Object} Iterator
+ * @returns {Object} Generator
  */
 function* calculateDownloadProgress (expectedTotal) {
   let totalDownloaded = 0;
@@ -279,6 +297,15 @@ function* calculateDownloadProgress (expectedTotal) {
     newItems = yield `${percent}%`;
   }
 }
+
+let progress = calculateDownloadProgress(1024);
+// statement completion value -> undefined
+progress.next()
+// statement completion value -> {value: "0.00%", done: false}
+progress.next(15)
+// statement completion value -> {value: "1.46%", done: false}
+progress.next(500)
+// statement completion value -> {value: "50.29%", done: false}
 ```
 
 ### DIY
@@ -286,6 +313,7 @@ function* calculateDownloadProgress (expectedTotal) {
 ```javascript
 /**
  *
+ * @returns {Object} Generator
  */
 function* spinGen() {
   while(true){

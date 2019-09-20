@@ -121,23 +121,18 @@ A lot of information has been written about JavaScript and EcmaScript since both
   - Exercises
 - DAY 7
   - `this` Keyword
-    - <https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch1.md>
-    - <https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md>
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this>
-    - BIND
-    - APPLY
-    - CALL
+    - Introduction
+    - Resolving `this`
+    - Explicitly binding `this` through prototype methods
+      - `Function.prototype.bind()`
+      - `Function.prototype.apply()`
+      - `Function.prototype.call()`
   - Strict mode
     - What happens on strict mode?
     - Semantic Differences
   - Arrow Functions
-    - ...
-    - ...
-    - .. good practices
   - Generators
-    - ..
-    - ..
-    - .. good practices
+  - Exercises
 - DAY 8
   - Classes
     - <https://www.ecma-international.org/ecma-262/6.0/#sec-class-definitions>
