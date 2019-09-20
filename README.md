@@ -119,7 +119,7 @@ A lot of information has been written about JavaScript and EcmaScript since both
   - Relative Concepts Readings
   - Preliminary practice
   - Exercises
-- DAY 7
+- [DAY 7](/day_07.md)
   - `this` Keyword
     - Introduction
     - Resolving `this`
