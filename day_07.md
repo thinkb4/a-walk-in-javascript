@@ -150,7 +150,7 @@ f(); // 6
 
 ```
 
-One of the most expected and misused features of ES6 is the Arrow Function. Undoubtedly powerful it might also derive in a headache if you don't really know how they work and which are the difference between the full body notation and the arrow notation.
+One of the most expected and misused features of ES6 is the Arrow Function. Undoubtedly powerful it might also derive in a headache if you don't really know how they work and which are the differences between the full body notation and the arrow notation.
 
 Let's take a look at [YDKJS - ES6 & Beyond - chapter 2](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch2.md#arrow-functions)
 
