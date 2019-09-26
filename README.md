@@ -143,18 +143,13 @@ A lot of information has been written about JavaScript and EcmaScript since both
     - <https://medium.com/@sho.miyata.1/the-object-oriented-programming-vs-functional-programming-debate-in-a-beginner-friendly-nutshell-24fb6f8625cc>
     - ...
     - .. good practices
-- DAY9
-  - Event Loop
-    - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/web%20api%20-%20event%20loop.md>
-    - <https://developer.mozilla.org/en-US/search?q=API>
-    - ..
+- [DAY 9](/day_09.md)
   - Asynchronous programming
+    - Event Loop
     - Callback
-      - <https://developer.mozilla.org/en-US/docs/Glossary/Callback_function>
-      - <https://en.wikipedia.org/wiki/Callback_(computer_programming)>
-    - Promise
+    - Promises
     - Async/Await
-    - .. good practices
+    - Exercises
 - DAY 10
   - The runtimes
     - Web Browser
