@@ -11,7 +11,7 @@
 
 ## Asynchronous programming
 
-Until ES6 (we'll get into that later, but we already saw a glimpse of that with Generators) there was nothing in the JS core specifying asynchronism, it had a fire-heated mark with the words "run-to-completion". In fact all asynchronous behavior depended on the host environment providing some kind of API in order to handle the asynchronism on it's side and communicate to the JavaScript engine the outcome if necessary.
+Until ES6 (we'll get into that later, but we already saw a glimpse of that with Generators) there was nothing in the JS core specifying asynchronism, it had a fire-heated mark with the words "run-to-completion". In fact all asynchronous behavior depended on the host environment providing some kind of API in order to handle the asynchronism on its side and communicate to the JavaScript engine the outcome if necessary.
 
 For example, you will find references and definitions of **timers** on the MDN documentation for [WindowOrWorkerGlobalScope](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope) describing them in the context of a browser host environment but if you make a search of **timer** or **timeout** in the [ES6](https://www.ecma-international.org/ecma-262/6.0/) spec you'll find ... absolutely nothing! So what does it mean? Plain a simple, it means **JavaScript has no notion of timers**, the host does, and as we discussed in previous chapters, a web browser is not the only host for JavaScript, it's just one of many AND most likely this very environment host doesn't even have the code to perform the asynchronism, it acts just as a bridge to their own host which might happen to be an operative system!!!!
 
@@ -80,13 +80,13 @@ Here an simplified example of callback you might have used but now you'll know b
 setTimeout( () => console.log(`I'm running late...er`), 1000 );
 ```
 
-Can you describe, in your words like a bedtime story, what's happening with that code? Need a help with that? Let's move on and take a final step into this with [YDKJS - Async & Performance - Callbacks](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch2.md) | by Kyle Simpson
+Can you describe, in your own words like a bedtime story, what's happening with that code? Need a help with that? Let's move on and take a final step into this with [YDKJS - Async & Performance - Callbacks](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch2.md) | by Kyle Simpson
 
 ---
 
 ### Promises
 
-Let's imagine we need to perform a task, you don't know how much it's gonna take but we need both make sure to do something whilst it's done AND in the meantime do something else AND have a complete control over the outcomes to prevent weir things happening.
+Let's imagine we need to perform a task, we don't know how much it's gonna take but we need both make sure to do something whilst it's done AND in the meantime do something else AND have a complete control over the outcomes to prevent weird things happening.
 
 If we do that with callbacks we'll end up in hell, actually there's a name for that, [callback hell](https://en.wiktionary.org/wiki/callback_hell), and there's even a [website](http://callbackhell.com/) with that name!
 
@@ -109,12 +109,12 @@ setTimeout( () => {
 
 ```
 
-After a few moments thinking about it you might say "that's easy", I won't gent into the "using `console`" implications, but let's imagine that you need `B`to happen only if `A`  is successful, AND `C`AND `D` should happen either way. Now our code starts looking not only hard to read but also hard to maintain, which is the doorway to a tsunami of bugs swarming to you.
+After a few moments thinking about it you might say "that's easy", I won't get into the "using `console`" implications, but let's imagine that you need `B` to happen only if `A`  is successful, AND `C` AND `D` should happen either way. Now our code starts looking not only hard to read but also hard to maintain, which is the doorway to a tsunami of bugs swarming to you.
 
-So, what's a promise and why it might help here?
+So, what's a promise? why it might help here?
 
 Imagine this:
-> I'm an Object, and once you give me a specific task I PROMISE YOU I'll let you know when I did it,  telling wether I SUCCEEDED or FAILED providing you the summary (outcome) so you can use it, THEN you can do something with that info if I SUCCEEDED OR alternatively do something with my FAILURE. FINALLY you might want to do something either way.
+> I'm an Object, and once you give me a specific task I PROMISE YOU I'll let you know when I did it,  telling whether I SUCCEEDED or FAILED providing you the summary (outcome) so you can use it, THEN you can do something with that info if I SUCCEEDED OR alternatively do something else with my FAILURE. FINALLY you might want to do something either way.
 
 That's something you are used to do with other people, isn't it?
 
@@ -166,12 +166,12 @@ Too much talking, let go to the best sources you can get.
 
 ### Async/await
 
-Wait what? we were talking about ES2015 but this is not an ES2015 feature, nor ES2016!! We had to wait until ES2017 (ES8?? nope, remember that's not the way to name ES versions anymore) to have it.
+Wait, what? We were talking about ES2015 but this is not an ES2015 feature, nor ES2016!! We had to wait until ES2017 (ES8?? nope, remember that's not the way to name ES versions anymore) to have it.
 Then why are we talking about this? Simply because is one of the most important tools (together with generators and promises) to write asynchronous programs in JavaScript today.
 
-Imagine there's a feature to handle under the hood a the event loop and the promises to **operate asynchronously BUT resembles synchronous** code on its syntax. Since many program errors are originated on the difficulty of understanding a complex structure (e.g. like a promise chain) this feature might help with that, isn't it?
+Imagine there's a feature to handle under the hood the event loop and the promises to **operate asynchronously BUT resembles synchronous** code on its syntax. Since many program errors are originated on the difficulty of understanding a complex structure (e.g. like a promise chain) this feature might help with that, isn't it?
 
-First things first. If we go to the [ECMA2017 - 9.2 - ECMAScript Function Objects definition](https://www.ecma-international.org/ecma-262/8.0/index.html#sec-ecmascript-function-objects) we'll find that `async` is one of the 4 kinds of functions `normal`, `classConstructor`, `generator`and `async`, and if you search "async" there list of results is around 450. There's a lot to read there if you want; I'd suggest you start reading ad the [14.6 - Async Function Definition](https://www.ecma-international.org/ecma-262/8.0/index.html#sec-async-function-definitions).
+First things first. If we go to the [ECMA2017 - 9.2 - ECMAScript Function Objects definition](https://www.ecma-international.org/ecma-262/8.0/index.html#sec-ecmascript-function-objects) we'll find that `async` is one of the 4 kinds of functions `normal`, `classConstructor` , `generator` and `async`, and if you search "async" there list of results is around 450. There's a lot to read there if you want to; I'd suggest you start reading the [14.6 - Async Function Definition](https://www.ecma-international.org/ecma-262/8.0/index.html#sec-async-function-definitions) first.
 
 Again, even if the spec gets more sweet and friendly over time, it's still dry (but it'd be IMHO the first thing to read).
 
