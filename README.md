@@ -2,7 +2,10 @@
 
 ## Preface
 
-A lot of information has been written about JavaScript and EcmaScript since both the language creation and the standard definition. The intention of this road map is to share with you one of many path you can take to grok the language and specially to point you to the high quality information in the intent to save you from hitting misleading ( when not completely wrong ) documents outside in the wild. Hopefully your walk is much easier than mine!
+A lot of information has been written about JavaScript and EcmaScript since both the language creation time and the standard definition time.
+The intention of this road map is to share with you one of many paths you can take to grok the language and specially to draw you to the highest quality information  (which I won't be ever able to write in a better way) in the attempt to prevent you from coming across misleading (when not completely wrong) documents outside in the wild.
+
+Hopefully your walk will be much easier than mine!
 
 ## Table Of Contents
 
@@ -133,16 +136,19 @@ A lot of information has been written about JavaScript and EcmaScript since both
   - Arrow Functions
   - Generators
   - Exercises
-- DAY 8
+- [DAY 8](/day_08.md)
   - Classes
-    - <https://www.ecma-international.org/ecma-262/6.0/#sec-class-definitions>
-    - <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes>
-    - ..
-    - .. good practices
+    - General definition
+    - Syntax
+      - `class` declaration statement
+      - `class` expression
+      - Class body and method definitions
+    - ES6 Classes in depth
   - OOP vs Functional
-    - <https://medium.com/@sho.miyata.1/the-object-oriented-programming-vs-functional-programming-debate-in-a-beginner-friendly-nutshell-24fb6f8625cc>
-    - ...
-    - .. good practices
+    - General definitions
+    - Some essential differences
+    - Examples
+  - Exercises
 - DAY9
   - Event Loop
     - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/web%20api%20-%20event%20loop.md>
