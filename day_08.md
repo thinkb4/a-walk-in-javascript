@@ -33,7 +33,7 @@ Let's start from the definition:
 
 (－‸ლ) (－‸ლ) now I'm confused ...so ... they're not  [classes](https://en.wikipedia.org/wiki/Class_(computer_programming)) so technically it's NOT a [class-based](https://en.wikipedia.org/wiki/Class-based_programming) language BUT you CAN do [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming)  ... so what in the world are they and what's the use? 
 
-Please don't give up. Despite the "unhappy" and misleading naming, they are a very useful and powerful abstraction around repetirtive and error prone routines to create `prototype` based inheritance structures.
+Please don't give up. Despite the "unhappy" and misleading naming, they are a very useful and powerful abstraction around repetitive and error prone routines to create `prototype` based inheritance structures.
 
 This time, ECMAScript international isn't very friendly with this:
 
@@ -41,7 +41,7 @@ This time, ECMAScript international isn't very friendly with this:
 - [Functions and Classes](https://www.ecma-international.org/ecma-262/6.0/#sec-functions-and-classes)
 - [MakeClassConstructor](https://www.ecma-international.org/ecma-262/6.0/#sec-makeclassconstructor)
 
-So let's borrough some info from MDN.
+So let's borrow some info from MDN.
 
 ### Syntax
 
@@ -80,7 +80,7 @@ var MyClass = class [className] [extends] {
 
 ### ES6 Classes in depth
 
-So far we had a reasonable amount of information to shallowly understand JavaScript Classes, but I wanna push you a little further.
+So far we've had a reasonable amount of information to shallowly understand JavaScript Classes, but I wanna push you a little further.
 
 Again I'll ask Kyle Simpson's book to help me. Please go to [YDKJS: this & Object Prototypes - Appendix A: ES6 class](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/apA.md)
 
@@ -88,7 +88,7 @@ At this point we should be wise enough to start with the next step.
 
 ## OOP vs Functional programming
 
-First of all I'd love to de-mistify something, there's not such a thing like a better paradigm. Both are powerful and both have their pros/cons depending on where and how they're used. Like a hammer and a screw-driver they're just tools, not more nor less. And they're incredible. Learn them, study them so you can make a better use of your creativity and your resources.
+First of all I'd love to de-mystify something, there's not such a thing like a better paradigm. Both are powerful and both have their pros/cons depending on where and how they're used. Like a hammer and a screw-driver they're just tools, not more nor less. And they're incredible. Learn them, study them so you can make a better use of your creativity and your resources.
 
 ### General definitions
 
@@ -127,12 +127,12 @@ First of all I'd love to de-mistify something, there's not such a thing like a b
 - Iteration over recursion
 - Imperative over declarative programming paradigm
 - Mutable over immutable data structures
-- [Statefull](https://en.wikipedia.org/wiki/State_(computer_science)#Program_state)
+- [Stateful](https://en.wikipedia.org/wiki/State_(computer_science)#Program_state)
 - [Nondeterministic](https://en.wikipedia.org/wiki/Nondeterministic_algorithm)
 
 #### Examples
 
-Let's see this oversimplified example and discuss about it.
+Let's see this oversimplified example and discuss it.
 
 ```javascript
 /**

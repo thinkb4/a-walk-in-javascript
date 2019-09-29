@@ -3,9 +3,9 @@
 ## Preface
 
 A lot of information has been written about JavaScript and EcmaScript since both the language creation time and the standard definition time.
-The intention of this road map is to share with you one of many path you can take to grok the language and specially to point you to the high quality information  (which I won't be ever able to write in a better way) in the intent to save you from hitting misleading ( when not completely wrong ) documents outside in the wild.
+The intention of this road map is to share with you one of many paths you can take to grok the language and specially to draw you to the highest quality information  (which I won't be ever able to write in a better way) in the attempt to prevent you from coming across misleading (when not completely wrong) documents outside in the wild.
 
-Hopefully your walk is much easier than mine!
+Hopefully your walk will be much easier than mine!
 
 ## Table Of Contents
 
