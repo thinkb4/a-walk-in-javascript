@@ -149,18 +149,13 @@ Hopefully your walk will be much easier than mine!
     - Some essential differences
     - Examples
   - Exercises
-- DAY9
-  - Event Loop
-    - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/web%20api%20-%20event%20loop.md>
-    - <https://developer.mozilla.org/en-US/search?q=API>
-    - ..
+- [DAY 9](/day_09.md)
   - Asynchronous programming
+    - Event Loop
     - Callback
-      - <https://developer.mozilla.org/en-US/docs/Glossary/Callback_function>
-      - <https://en.wikipedia.org/wiki/Callback_(computer_programming)>
-    - Promise
+    - Promises
     - Async/Await
-    - .. good practices
+    - Exercises
 - DAY 10
   - The runtimes
     - Web Browser
