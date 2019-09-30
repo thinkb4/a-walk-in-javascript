@@ -38,9 +38,10 @@ describe('DAY 4: Test Arrays', () => {
         expect(array).toBeInstanceOf(Array);
     });
 
-    it('Array to be instance of Object', () => {
+    it('Array to be instance of Object and Array', () => {
         // use any of the previous
         let array;
+        expect(array).toBeInstanceOf(Array);
         expect(array).toBeInstanceOf(Object);
     });
 
