@@ -130,7 +130,7 @@ Also a big section of the Chapter 3 of Your Don't Know Js - ES6 & Beyond is dedi
 >
 > Source: [YDKJS - ES6 & Beyond - Ch 3](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch3.md#iterators)
 
-We can find many iterable examples [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#Iterable_examples).
+We can find many iterable examples [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#Examples_using_the_iteration_protocols).
 
 Another interesting reading is "[A Simple Guide to ES6 Iterators in JavaScript with Examples"](https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e) by "[Brandon Morelli](https://codeburst.io/@bmorelli25)"
 
