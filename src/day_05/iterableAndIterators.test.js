@@ -45,6 +45,7 @@ describe('DAY 5: Iterable/Iterator', () => {
     });
 
     it(`make your own test to get all values from a String using the iterable protocol`, () => {
+        // I'm throwing and error to make it fail, remove it and add your code
         throw Error('do not cheat 3:) ');
     });
 });

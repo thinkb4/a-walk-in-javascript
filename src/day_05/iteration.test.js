@@ -11,7 +11,7 @@ describe('DAY 5: Test Iteration - While', () => {
 
     it(`(while loop)
         condition: pre increment a 
-        body: should break if a greater than 4`, () => {
+        body: should break if a is greater than 4`, () => {
         let a = 0;
 
         expect(a).toBe(5);
@@ -34,7 +34,7 @@ describe('DAY 5: Test Iteration - for', () => {
     });
 
     it(`(for loop)
-        initialization: se a to 0
+        initialization: set a to 0
         condition: keep looping whilst a is less than 5
         final-expression: post increment a
         body: operate with a and b to make b a string equals to 01234`, () => {
@@ -75,7 +75,7 @@ describe('DAY 5: Test Iteration - for...of', () => {
 
     it(`(for..of loop)
         for every char of string
-        add it's uppercase version to string2`, () => {
+        add its uppercase version to string2`, () => {
         let string = 'hello';
         let string2 = '';
 
