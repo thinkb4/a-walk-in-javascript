@@ -20,12 +20,12 @@ describe('DAY 6: Test Hoisting', () => {
         };
     });
 
-    it(`myHoistedFunctionDeclaration should be hoisted as undefined,
+    it(`myHoistedFunctionDeclaration should be hoisted together with its body,
         NOT to throw a reference error`, () => {
 
         // change the expect clause to complete the test
         // @see https://jestjs.io/docs/en/expect documentation for help
-        expect(myHoistedFunctionDeclaration).toBeUndefined();
+        expect(myHoistedFunctionDeclaration).toThrow();
 
         /**
          * @returns {undefined}
