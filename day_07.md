@@ -338,7 +338,6 @@ Let's take some time to read and discuss:
 Let's open our test files:
 
 - [this](/src/day_07/this.test.js)
-- [strict mode](/src/day_07/strictMode.test.js)
 - [arrow functions](/src/day_07/arrowFunctions.test.js)
 - [generators](/src/day_07/generators.test.js)
 
