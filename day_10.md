@@ -8,11 +8,10 @@
   - How many of them are there?
   - That's it?
 - The ECMAScript runtime
-  - Web Browser
-  - Node
-  - MIXED ENVIRONMENT <https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/apA.md>
+  - Differences
+  - Similarities
+  - Mixed Environment
 - Javascript and the web
-  - V8, SpiderMonkey, Chakra, WebKit, Hermes
   - HTML
   - CSS
   - .. good practices
@@ -47,6 +46,12 @@ So what does the engine actually do? (briefly)
 - no what? It's time to convert that IR into something the machine can execute (e.g. [machine code](https://en.wikipedia.org/wiki/Machine_code)). In the modern JavaScript engines (originally introduced by [V8](https://chromium.googlesource.com/v8/v8)) this happens in [runtime](https://en.wikipedia.org/wiki/Run_time_(program_lifecycle_phase)) (during execution) and is known as [JIT](https://en.wikipedia.org/wiki/Just-in-time_compilation)
 - the? Again, pretty much all modern ECMAScript engines, especially JavaScript engines implement some form of optimization (e.g V8's [TurboFan](https://v8.dev/blog/launching-ignition-and-turbofan))
 
+#### Visual guide based on V8
+
+| HEAP (memory allocation)                                                                                                                                                                                                                                                         | EXECUTION CONTEXT STACK (call stack)                                                                                                                                                                                                                                                                                                                                                                         |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Here the engine stores the memory addresses for compound data  ( e.g. objects and object subtypes like functions, arrays).  This memory doesn't depend on the execution context, will be persisted until the Garbage Collector can claim it.   - **Garbage Collector (Orinoco)** | The ECS is tied to the function execution. When a function is called, it'll be added to the stack in a LIFO order. It runs synchronously and when its execution has been completed it'll be popped off the stack and the engine will take the next item on the stack.  Javascript has only ONE ECS, therefore one thing at a time can be executed.  **Interpreters (TurboFan)** -  **Optimizers (Ignition)** |
+
 ### How many of them are there?
 
 More than 30
@@ -59,4 +64,35 @@ You can check a quite long List of [ECMAScript engines in Wikipedia](https://en.
 
 ## The ECMAScript runtime
 
+We said "This Host environment (a.k.a ECMAScript Runtime) will provide to the engine the necessary elements to interact with other systems.", can we have a concrete example?
 
+Let's try to be simple:
+We know two runtimes that share the same engine: V8 is the JavaScript engine for both Chrome and Node.js, the overlapping surface between both runtimes is huge but there are also big differences. See the table below.
+
+### Differences
+
+- Chrome
+  - [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) (tons of them)
+  - `window` predefined global object
+  - `location` global object
+  - `document` global object
+  - `import`
+  - ES6 modules
+- Node.js
+  - headless
+  - `global`predefined global object
+  - `require`
+  - `process`
+  - CommonJs modules
+
+### Similarities
+
+- Timers
+- Event Loop
+- Callback Queue
+
+Why should I care? because even though we're writing JavaScript, depending on the runtime for the same engine, our program might shamefully fail or it could be extremely hard to test.
+
+Here some more cases of mixed environments differences from [YDKJS: Types & Grammar - Mixed Environment JavaScript](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20&%20grammar/apA.md) by Kyle Simpson.
+
+## Javascript and the web
