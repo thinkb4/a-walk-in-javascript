@@ -177,7 +177,6 @@ let plantsWithMoreFlowers = myPlants.map(flower => ++flower);
 Let's open our test files:
 
 - [Classes](/src/day_08/classes.test.js)
-- [oop vs functional](/src/day_08/oopVsFunctional.test.js)
 
 Now open your terminal.
 
