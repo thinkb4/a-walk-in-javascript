@@ -171,25 +171,31 @@ Hopefully your walk will be much easier than mine!
     - CSS
   - TL;DR
   - Complementary readings
-- DAY 11
+- [DAY 11](/day_11.md)
+  - Quality and reliability
+    - An introduction to the "reliability" and "quality" concepts
+  - Unit / Integration / Functional testing
+    - Definitions
+    - Comparison
+    - TDD
+    - Testing frameworks for JavaScript
   - Debugging
-    - <https://developer.mozilla.org/en-US/search?q=debug>
-    - The console object
-    - .. good practices
+    - Debugging tools available for JavaScript
+      - Global console object
+      - Node.js console
+      - debugger statement
+      - node.js debugger
+      - Browser's developer tools
+      - IDE interaction with a browser to debug
   - Transpilers
     - Babel
-    - ...
-    - .. good practices
-  - Task runners & bundlers
+  - Task runners, bundlers, build systems
     - Webpack
+    - Grunt
+    - Gulp
+    - Brunch
+    - Yeoman
     - RollUp
-    - ...
-    - .. good practices
-  - Unit / integration tests
-    - <http://www.softwaretestingclass.com/what-is-difference-between-unit-testing-and-integration-testing/>
-    - TDD
-    - <https://jestjs.io/>
-    - .. good practices
 - DAY 12
   - Destructuring
     - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/destructuring.md>
