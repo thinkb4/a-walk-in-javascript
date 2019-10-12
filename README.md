@@ -156,16 +156,21 @@ Hopefully your walk will be much easier than mine!
     - Promises
     - Async/Await
     - Exercises
-- DAY 10
-  - The runtimes
-    - Web Browser
-    - Node
-    - MIXED ENVIRONMENT <https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/apA.md>
+- [DAY 10](/day_10.md)
+  - JavaScript, where does it live?
+    - The ECMAScript Engine
+    - What does the engine actually do?
+      - Visual guide based on V8
+    - How many of them are there?
+    - Engines Differences
+  - The ECMAScript runtime
+    - Runtimes Differences
+    - Similarities
   - Javascript and the web
-    - V8, SpiderMonkey, Chakra, WebKit, Hermes
     - HTML
     - CSS
-    - .. good practices
+  - TL;DR
+  - Complementary readings
 - DAY 11
   - Debugging
     - <https://developer.mozilla.org/en-US/search?q=debug>
