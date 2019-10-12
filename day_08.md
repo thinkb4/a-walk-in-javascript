@@ -31,7 +31,7 @@ Let's start from the definition:
 >
 > Source: [MDN - Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
-(－‸ლ) (－‸ლ) now I'm confused ...so ... they're not  [classes](https://en.wikipedia.org/wiki/Class_(computer_programming)) so technically it's NOT a [class-based](https://en.wikipedia.org/wiki/Class-based_programming) language BUT you CAN do [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming)  ... so what in the world are they and what's the use? 
+(－‸ლ) (－‸ლ) now I'm confused ...so ... they're not  [classes](https://en.wikipedia.org/wiki/Class_(computer_programming)) so technically it's NOT a [class-based](https://en.wikipedia.org/wiki/Class-based_programming) language BUT you CAN do [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming)  ... so what in the world are they and what's the use?
 
 Please don't give up. Despite the "unhappy" and misleading naming, they are a very useful and powerful abstraction around repetitive and error prone routines to create `prototype` based inheritance structures.
 
