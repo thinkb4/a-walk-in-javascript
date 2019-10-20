@@ -136,8 +136,8 @@ We won't get deep into them as that's not the scope of this course, but at least
 
 ## TL;DR
 
-- **JavaScript Engine:** takes car of the analysis and execution of the code
-- **JavaScript Runtime:** takes car of running the JavaScript engine and provide to it the mechanisms to communicate with other systems (e.g. timers, external resources) through specific APIs
+- **JavaScript Engine:** takes care of the analysis and execution of the code
+- **JavaScript Runtime:** takes care of running the JavaScript engine and provide to it the mechanisms to communicate with other systems (e.g. timers, external resources) through specific APIs
 - **HTML:** takes care of presenting the information to the browser in a semantic way by delivering a structured document and inform the browser about external resources required for the presentation (e.g. js, css, fonts)
 - **CSS:** takes care of defining the structured document (HTML) to cover different presentational (rendering) needs such as visual aspect (e.g desktop vs mobile displays), specific devices (e.g. printers), accessibility (e.g. screen readers, Braille tactile devices)
 

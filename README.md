@@ -196,12 +196,13 @@ Hopefully your walk will be much easier than mine!
     - Brunch
     - Yeoman
     - RollUp
-- DAY 12
+- [DAY 12](/day_12.md)
   - Destructuring
-    - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/destructuring.md>
-    - ..
-    - .. good practices
-  - Function composition
-    - <https://github.com/Jaxolotl-Didactic-Lab/useful-info/blob/develop/currying_partialApplication_composition.md>
-    - ..
-    - .. good practices
+    - Syntax
+    - Examples
+    - Readings
+  - Advanced Function/code factorization
+    - Currying
+    - Partial application
+    - First-class composition
+    - Readings
