@@ -1,0 +1,42 @@
+{
+  "name": "a-walk-in-javascript",
+  "version": "1.13.1",
+  "description": "A day by day walk through the basics of javascript assisted with notes, exercises and references to the most significant resources online",
+  "main": "''",
+  "scripts": {
+    "test": "jest -c jest.config.json --coverage",
+    "test:watch": "jest -c jest.config.json --watchAll",
+    "lint": "eslint src/**/*.js",
+    "lint-w": "esw -w --color src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaxolotl/a-walk-in-javascript.git"
+  },
+  "keywords": [
+    "javascript",
+    "JS",
+    "ES6",
+    "ECMAScript"
+  ],
+  "author": "Javier Valderrama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jaxolotl/a-walk-in-javascript/issues"
+  },
+  "homepage": "https://github.com/Jaxolotl/a-walk-in-javascript#readme",
+  "devDependencies": {
+    "@babel/cli": "~7.4.4",
+    "@babel/core": "~7.4.4",
+    "@babel/preset-env": "~7.4.4",
+    "@jaxolotl/eslint-config-wdc-es6": "~1.2.0",
+    "babel-eslint": "~10.0.1",
+    "eslint": "~5.16.0",
+    "eslint-plugin-import": "~2.18.2",
+    "eslint-plugin-node": "~10.0.0",
+    "eslint-plugin-promise": "~4.2.1",
+    "eslint-plugin-standard": "~4.0.1",
+    "jest": "~24.7.1",
+    "jest-cli": "~24.7.1"
+  }
+}
