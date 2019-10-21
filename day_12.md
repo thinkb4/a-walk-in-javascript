@@ -1,6 +1,6 @@
 # [A walk in JavaScript](/README.md)
 
-## DAY 11
+## DAY 12
 
 - Destructuring
   - Syntax
@@ -45,7 +45,7 @@ Source [Wikipedia](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 Now that's better, if we think in terms of unpacking it's much easier to understand.
 
-But this is only the beginning, this new feature enables a lot of new patterns which were hard to write and maintain before ES& or event impossible to write.
+But this is only the beginning, this new feature enables a lot of new patterns which were hard to write and maintain before ES6 or event impossible to write.
 
 Object destructuring:
 
