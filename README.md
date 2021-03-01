@@ -21,10 +21,10 @@ Hopefully your walk will be much easier than mine!
     - [Why are we using ES6 in this course?](/day_01.md#why-are-we-using-es6-in-this-course)
     - [After ES6?](/day_01.md#after-es6)
   - [Initial workspace Setup](/day_01.md#initial-workspace-setup)
-    - [Basic Runtime ( Node )](https://nodejs.org/en/)
-    - [IDE ( Visual Studio Code )](https://code.visualstudio.com/)
+    - Basic Runtime ( Node )
+    - IDE ( Visual Studio Code )
     - [Run Code extension](/day_01.md#initial-workspace-setup)
-    - [Introduction to NPM](https://docs.npmjs.com/about-npm/)
+    - Introduction to NPM
 - [DAY 2](/day_02.md)
   - [Syntax, Grammar & Semantics](/day_02.md#syntax-grammar--semantics)
     - [Statements](/day_02.md#statements)
@@ -32,31 +32,31 @@ Hopefully your walk will be much easier than mine!
     - [Contextual Rules](/day_02.md#semantics)
   - [ECMAScript Types](/day_02.md#ecmascript-types)
     - [Value type groups](/day_02.md#value-type-groups)
-      - [Primitives](https://en.wikipedia.org/wiki/Primitive_data_type)
-        - [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
-        - [Null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type)
-        - [Undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
-        - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
-        - [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) ( it's still a [Stage 3 proposal](https://github.com/tc39/proposal-bigint) but Chrome already support it and Firefox and Safari are underway. )
-        - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-        - [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type) ( new in ES6! )
+      - Primitives
+        - Boolean
+        - Null
+        - Undefined
+        - Number
+        - BigInt ( it's still a Stage 3 proposal but Chrome already support it and Firefox and Safari are underway.
+        - String
+        - Symbol( new in ES6! )
       - [Composite/Compound](/day_02.md#compositecompound)
-        - [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Objects)
+        - Object
     - [Type conversion](/day_02.md#type-conversion)
       - Explicit ( "type casting" )
       - Implicit ( Coercion )
   - [Operators](/day_02.md#operators)
-    - [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
-    - [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison)
-    - [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Arithmetic)
-    - [Bitwise operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Arithmetic)
-    - [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Logical)
-    - [String operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#String)
-    - [Conditional (ternary) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Conditional)
-    - [Comma operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comma)
-    - [Unary operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Unary)
-    - [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Relational)
-    - [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+    - Assignment operators
+    - Comparison operators
+    - Arithmetic operators
+    - Bitwise operators
+    - Logical operators
+    - String operators
+    - Conditional (ternary) operator
+    - Comma operator
+    - Unary operators
+    - Relational operators
+    - Destructuring
     - [Operators Precedence](/day_02.md#operators-precedence)
     - [Spread/Rest](/day_02.md#the-case-of-the---spreadrest-operator-)
 - [DAY 3](/day_03.md)
