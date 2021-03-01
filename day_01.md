@@ -2,21 +2,22 @@
 
 ## DAY 1
 
-- Introduction to JavaScript
+
+- [Introduction to JavaScript](#introduction-to-javascript)
   - What is JS anyway?
-  - What's ECMAScript?
-  - Language features quick overview
-  - Myths busted
-- ES5 vs ES6
+  - [What's ECMAScript?](#but-what-is-ecma)
+  - [Language features quick overview](#languages-features-quick-overview)
+  - [Myths busted](#myths-busted)
+- [ES5 vs ES6](#es5-vs-es6)
   - Relevant differences
   - Relevant improvements
-  - Why are we using ES6 in this course?
-  - After ES6?
-- Initial workspace Setup
-  - Basic Runtime ( Node )
-  - IDE ( Visual Studio Code )
-  - Run Code extension
-  - Introduction to NPM
+  - [Why are we using ES6 in this course?](#why-are-we-using-es6-in-this-course)
+  - [After ES6?](#after-es6)
+- [Initial workspace Setup](#initial-workspace-setup)
+  - [Basic Runtime ( Node )](https://nodejs.org/en/)
+  - [IDE ( Visual Studio Code )](https://code.visualstudio.com/)
+  - [Run Code extension](#initial-workspace-setup)
+  - [Introduction to NPM](https://docs.npmjs.com/about-npm/)
 
 ## Introduction to JavaScript
 
@@ -122,7 +123,7 @@ Well, by the time being we're on the [ES2019 version](https://www.ecma-internati
 1. [Install Node.js](https://nodejs.org/en/)
 2. [Install VS Code](https://code.visualstudio.com/)
 3. Add the following extensions to VS Code
-   1. CodeRunner
-   2. EsLint
-   3. Debugger for Chrome
+   1. [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+   2. [EsLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+   3. [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 4. [Introduction to NPM](https://docs.npmjs.com/about-npm/)
