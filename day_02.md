@@ -237,4 +237,4 @@ As you can see, even though the documentation and the naming is quite awkward, i
 ***
 [Go back to DAY 1](/day_01.md) or [Go next to DAY 3](/day_03.md)
 ***
-[Back to main page](/readme.md#day-2)
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-2)

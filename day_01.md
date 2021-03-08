@@ -132,4 +132,4 @@ Well, by the time being we're on the [ES2019 version](https://www.ecma-internati
 ***
 [Go next to DAY 2](/day_02.md)
 ***
-[Back to main page](readme.md#day-1)
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-1)
