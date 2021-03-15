@@ -127,3 +127,9 @@ Well, by the time being we're on the [ES2019 version](https://www.ecma-internati
    2. [EsLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
    3. [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 4. [Introduction to NPM](https://docs.npmjs.com/about-npm/)
+
+
+***
+[Go next to DAY 2](/day_02.md)
+***
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-1)

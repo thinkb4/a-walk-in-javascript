@@ -233,3 +233,8 @@ A clearer approach can be found on MDN
 And we can find some interesting insights at Kyle Simpson's [YDKJS Edition 1 - ES6 & Beyond - Chapter 2](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch2.md#spreadrest)
 
 As you can see, even though the documentation and the naming is quite awkward, it opens a new world of capabilities and really makes our lives easier when you start mastering it.
+
+***
+[Go back to DAY 1](/day_01.md) or [Go next to DAY 3](/day_03.md)
+***
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-2)

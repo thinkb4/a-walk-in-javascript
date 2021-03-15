@@ -9,23 +9,25 @@ Hopefully your walk will be much easier than mine!
 
 ## Table Of Contents
 
-- [DAY 1](/day_01.md)
-  - [Introduction to JavaScript](/day_01.md#introduction-to-javascript)
-    - What is JS anyway?
-    - [What's ECMAScript?](/day_01.md#but-what-is-ecma)
-    - [Language features quick overview](/day_01.md#languages-features-quick-overview)
-    - [Myths busted](/day_01.md#myths-busted)
-  - [ES5 vs ES6](/day_01.md#es5-vs-es6)
-    - Relevant differences
-    - Relevant improvements
-    - [Why are we using ES6 in this course?](/day_01.md#why-are-we-using-es6-in-this-course)
-    - [After ES6?](/day_01.md#after-es6)
-  - [Initial workspace Setup](/day_01.md#initial-workspace-setup)
-    - Basic Runtime ( Node )
-    - IDE ( Visual Studio Code )
-    - [Run Code extension](/day_01.md#initial-workspace-setup)
-    - Introduction to NPM
-- [DAY 2](/day_02.md)
+
+### [DAY 1](/day_01.md)
+- [Introduction to JavaScript](/day_01.md#introduction-to-javascript)
+  - What is JS anyway?
+  - [What's ECMAScript?](/day_01.md#but-what-is-ecma)
+  - [Language features quick overview](/day_01.md#languages-features-quick-overview)
+  - [Myths busted](/day_01.md#myths-busted)
+- [ES5 vs ES6](/day_01.md#es5-vs-es6)
+  - Relevant differences
+  - Relevant improvements
+  - [Why are we using ES6 in this course?](/day_01.md#why-are-we-using-es6-in-this-course)
+  - [After ES6?](/day_01.md#after-es6)
+- [Initial workspace Setup](/day_01.md#initial-workspace-setup)
+  - Basic Runtime ( Node )
+  - IDE ( Visual Studio Code )
+  - [Run Code extension](/day_01.md#initial-workspace-setup)
+  - Introduction to NPM
+***
+### [DAY 2](/day_02.md)
   - [Syntax, Grammar & Semantics](/day_02.md#syntax-grammar--semantics)
     - [Statements](/day_02.md#statements)
     - [Expressions](/day_02.md#expressions)
@@ -59,7 +61,8 @@ Hopefully your walk will be much easier than mine!
     - Destructuring
     - [Operators Precedence](/day_02.md#operators-precedence)
     - [Spread/Rest](/day_02.md#the-case-of-the---spreadrest-operator-)
-- [DAY 3](/day_03.md)
+***
+### [DAY 3](/day_03.md)
   - Objects explained
     - Objects, the big picture
     - Syntax
@@ -69,7 +72,8 @@ Hopefully your walk will be much easier than mine!
     - Exotic Objects
     - Object built-in methods
     - Standard built-in objects
-- [DAY 4](/day_04.md)
+***
+### [DAY 4](/day_04.md)
   - Indexed and Keyed Collections
     - Collections family
     - The Array Object
@@ -77,7 +81,8 @@ Hopefully your walk will be much easier than mine!
     - Array Built-in methods
     - Preliminary practice
     - Exercises
-- [DAY 5](/day_05.md)
+***
+### [DAY 5](/day_05.md)
   - Control Structures
     - General definition
     - Branching
@@ -88,7 +93,8 @@ Hopefully your walk will be much easier than mine!
     - The Iterable and the Iterator Protocol
     - Preliminary Practice
     - Exercises
-- [DAY 6](/day_06.md)
+***
+### [DAY 6](/day_06.md)
   - Functions
     - General Definition
     - Function declaration (function statement)
@@ -122,7 +128,8 @@ Hopefully your walk will be much easier than mine!
   - Relative Concepts Readings
   - Preliminary practice
   - Exercises
-- [DAY 7](/day_07.md)
+***  
+### [DAY 7](/day_07.md)
   - `this` Keyword
     - Introduction
     - Resolving `this`
@@ -136,7 +143,8 @@ Hopefully your walk will be much easier than mine!
   - Arrow Functions
   - Generators
   - Exercises
-- [DAY 8](/day_08.md)
+***
+### [DAY 8](/day_08.md)
   - Classes
     - General definition
     - Syntax
@@ -149,14 +157,16 @@ Hopefully your walk will be much easier than mine!
     - Some essential differences
     - Examples
   - Exercises
-- [DAY 9](/day_09.md)
+***
+### [DAY 9](/day_09.md)
   - Asynchronous programming
     - Event Loop
     - Callback
     - Promises
     - Async/Await
     - Exercises
-- [DAY 10](/day_10.md)
+***
+### [DAY 10](/day_10.md)
   - JavaScript, where does it live?
     - The ECMAScript Engine
     - What does the engine actually do?
@@ -171,7 +181,8 @@ Hopefully your walk will be much easier than mine!
     - CSS
   - TL;DR
   - Complementary readings
-- [DAY 11](/day_11.md)
+***
+### [DAY 11](/day_11.md)
   - Quality and reliability
     - An introduction to the "reliability" and "quality" concepts
   - Unit / Integration / Functional testing
@@ -196,7 +207,8 @@ Hopefully your walk will be much easier than mine!
     - Brunch
     - Yeoman
     - RollUp
-- [DAY 12](/day_12.md)
+***
+### [DAY 12](/day_12.md)
   - Destructuring
     - Syntax
     - Examples
