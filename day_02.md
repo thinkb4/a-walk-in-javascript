@@ -128,7 +128,7 @@ You can learn more from his [YDKJS - Types & Grammar](https://github.com/getify/
 
 ### Semantics
 
-So far most of the definitions an examples could fairly understood left-to-right based on the **form** ( **syntax** ) but as every language, several syntactically similar structures might mean different things depending on the context, and that **meaning** are ruled by the [semantics](<https://en.wikipedia.org/wiki/Semantics_(computer_science)>).
+So far most of the definitions and examples could be fairly understood going from left-to-right based on the **form** ( **syntax** ) but as every language, several syntactically similar structures might mean different things depending on the context, and that **meaning** are ruled by the [semantics](<https://en.wikipedia.org/wiki/Semantics_(computer_science)>).
 
 Again Kyle Simpson provides an awesome example of [Contextual Rules](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#contextual-rules) especially for the case of the [Curly Braces](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#blocks) which is shockingly simple that scares.
 
@@ -144,7 +144,7 @@ Now let's destroy another myth.
 
 > **[MYTH]** JavaScript doesn't have types
 
-In order bust that myth the only thing we need is to carefully read the spec! A word is repeated several times and it's "**value**"!  
+In order to bust that myth the only thing we need is to carefully read the spec! One word is repeated several times and it's "**value**"!  
 Why is that so important? Because in JavaScript, TYPES is all about VALUES, it doesn't matter the name of an identifier, nor the way you initialized your variable, neither the initial type of the value you assigned to the variable. The TYPE will, ultimately be determined at runtime and if needed it will be [transformed implicitly into another type](http://www.ecma-international.org/ecma-262/6.0/#sec-type-conversion), if needed, in order to operate with that value consistently. The latter mechanism is called [coercion](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch4.md) and we'll explain it later today.
 
 It's said to be "[weak-typed](https://en.wikipedia.org/wiki/Programming_language#Weak_and_strong_typing)" but I find "[dynamically-typed](https://en.wikipedia.org/wiki/Programming_language#Static_versus_dynamic_typing)" more expressive.
@@ -159,7 +159,7 @@ ES2015 standard defines eight data types organized in two groups.
 - [Null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type)
 - [Undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
-- [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) ( it's still a [Stage 3 proposal](https://github.com/tc39/proposal-bigint) but Chrome already support it and Firefox and Safari are underway. )
+- [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) ( it's still a [Stage 3 proposal](https://github.com/tc39/proposal-bigint) but Chrome already supports it and Firefox and Safari are underway. )
 - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
 - [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type) ( new in ES6! )
 
@@ -167,14 +167,14 @@ ES2015 standard defines eight data types organized in two groups.
 
 - [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Objects)
 
-Bibliography related to ECMAScript types is huge, sometimes too cryptic, sometimes too light, and unfortunately many times confusing when not inaccurate. As you might already understand, one of my favorites is Kyle Simpson, one of he's books there's a chapter dedicated to types which covers most of them ad exception of [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) which came out after his first edition. Let's jump into [YDKJS: Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch1.md#built-in-types)
+Bibliography related to ECMAScript types is huge, sometimes too cryptic, sometimes too light, and unfortunately many times confusing when not inaccurate. As you might already understand, one of my favorites is Kyle Simpson, in one of his books there's a chapter dedicated to types which covers most of them ad exception of [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) which came out after his first edition. Let's jump into [YDKJS: Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch1.md#built-in-types)
 
 ### Type Conversion
 
 In order to be able to dynamically convert the type of a value during evaluation, both explicit ( intentional "casting" ) or implicit ( automatic coercion ) conversion will use the same mechanism.
-E.g. If the value is and `object` and the operations requires a `primitive` output, it'll look for the appropriate method [toPrimitive](http://www.ecma-international.org/ecma-262/6.0/#sec-toprimitive) which will convert its input argument to a non-Object type. If an object is capable of converting to more than one primitive type, it may use the optional hint PreferredType to favour that type. If it's a `primitive` and an `object` is needed, it'll all the [ToObject](http://www.ecma-international.org/ecma-262/6.0/#sec-toobject) abstract operation in order to perform the required transformation and eventually return a [Primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#Primitive_wrapper_objects_in_JavaScript) aka [Boxing Wrapper](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#boxing-wrappers).
+E.g. If the value is an `object` and the operation requires a `primitive` output, it'll look for the appropriate method [toPrimitive](http://www.ecma-international.org/ecma-262/6.0/#sec-toprimitive) which will convert its input argument to a non-Object type. If an object is capable of converting to more than one primitive type, it may use the optional hint PreferredType to favour that type. If it's a `primitive` and an `object` is needed, it will do all of the [ToObject](http://www.ecma-international.org/ecma-262/6.0/#sec-toobject) abstract operations in order to perform the required transformation and eventually return a [Primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#Primitive_wrapper_objects_in_JavaScript) aka [Boxing Wrapper](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#boxing-wrappers).
 
-Several things might go wrong during this conversion al all the cases are captured on the spec, but since specs, sometimes are hard to follow, I'd love to show you some practical examples from [YDKJS: Types & Grammar - Natives](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#chapter-3-natives)
+Several things might go wrong during this conversion and all such cases are laid out in the spec, but since specs, sometimes are hard to follow, I'd love to show you some practical examples from [YDKJS: Types & Grammar - Natives](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#chapter-3-natives)
 
 Since implicit conversion, called **coercion** is one of the most misunderstood characteristics of JavaScript, let's have a read at [YDKJS: Types & Grammar - Coercion](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch4.md#chapter-4-coercion)
 
