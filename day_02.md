@@ -116,7 +116,7 @@ Interesting to take in consideration that:
 > In most languages, **statements** contrast with **expressions** in that statements do not return results and are executed solely for their side effects, while expressions always return a result and often do not have side effects at all.
 > Source: [Wikipedia](<https://en.wikipedia.org/wiki/Statement_(computer_science)#Expressions>)
 
-Also interesting to see how Kyle Simpson explains how the simple statement
+Also interesting to see how Kyle Simpson explains that the simple statement
 
 ```javascript
 a = b * 2;
