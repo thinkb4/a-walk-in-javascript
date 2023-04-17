@@ -3,21 +3,16 @@
 ## DAY 1
 
 
-- [Introduction to JavaScript](#introduction-to-javascript)
-  - What is JS anyway?
-  - [What's ECMAScript?](#but-what-is-ecma)
-  - [Language features quick overview](#languages-features-quick-overview)
-  - [Myths busted](#myths-busted)
-- [ES5 vs ES6](#es5-vs-es6)
-  - Relevant differences
-  - Relevant improvements
-  - [Why are we using ES6 in this course?](#why-are-we-using-es6-in-this-course)
-  - [After ES6?](#after-es6)
-- [Initial workspace Setup](#initial-workspace-setup)
-  - [Basic Runtime ( Node )](https://nodejs.org/en/)
-  - [IDE ( Visual Studio Code )](https://code.visualstudio.com/)
-  - [Run Code extension](#initial-workspace-setup)
-  - [Introduction to NPM](https://docs.npmjs.com/about-npm/)
+- [A walk in JavaScript](#a-walk-in-javascript)
+  - [DAY 1](#day-1)
+  - [Introduction to JavaScript](#introduction-to-javascript)
+    - [But what is ECMA?](#but-what-is-ecma)
+    - [Languages features quick overview](#languages-features-quick-overview)
+    - [Myths busted](#myths-busted)
+  - [ES5 vs ES6](#es5-vs-es6)
+    - [Why are we using ES6 in this course?](#why-are-we-using-es6-in-this-course)
+    - [After ES6?](#after-es6)
+  - [Initial workspace setup](#initial-workspace-setup)
 
 ## Introduction to JavaScript
 
@@ -78,7 +73,8 @@ Here some interesting articles
 - [V8 Background compilation](https://v8.dev/blog/background-compilation)
 - [V8 Ignition + TurboFan](https://v8.dev/blog/launching-ignition-and-turbofan)
 - [Understanding V8's ByteCode](https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775)
-- [SpiderMonkey ByteCodes](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Internals/Bytecodes)
+- [SpiderMonkey ByteCodes](https://developer.mozilla.org.cach3.com/en-US/docs/Mozilla/Projects/SpiderMonkey/Internals/Bytecode#Bytecode_Listing) (the original url is no longer available so I replaced it with a cache version)
+- [The Baseline Interpreter: a faster JS interpreter in Firefox 70](https://hacks.mozilla.org/2019/08/the-baseline-interpreter-a-faster-js-interpreter-in-firefox-70/)
 
 ## ES5 vs ES6
 
