@@ -2,7 +2,6 @@
 
 ## DAY 1
 
-
 - [A walk in JavaScript](#a-walk-in-javascript)
   - [DAY 1](#day-1)
   - [Introduction to JavaScript](#introduction-to-javascript)
@@ -19,7 +18,7 @@
 A great overview regarding ECMAScript and JavaScript.
 [Article by Michael Aranda](https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/)
 
-> JavaScript began as and primarily still is a language for scripting inside web browsers; however, the standardization of the language as ECMAScript has made it popular as a general-purpose language. In particular, the Mozilla implementation SpiderMonkey is embedded in several environments such as the Yahoo! Widget Engine. Other applications embedding ECMAScript implementations include the Adobe products Adobe Flash (ActionScript) and Adobe Acrobat (for scripting PDF files). [Scripting Language - Wikipedia](https://en.wikipedia.org/wiki/Scripting_language)
+> JavaScript began as - and primarily still is - a language for scripting inside web browsers; however, the standardization of the language as ECMAScript has made it popular as a general-purpose language. In particular, the Mozilla implementation SpiderMonkey is embedded in several environments such as the Yahoo! Widget Engine. Other applications embedding ECMAScript implementations include the Adobe products Adobe Flash (ActionScript) and Adobe Acrobat (for scripting PDF files). [Scripting Language - Wikipedia](https://en.wikipedia.org/wiki/Scripting_language)
 
 ### But what is ECMA?
 
@@ -88,16 +87,16 @@ To be fair we should go back to the evolution of ES.
 >
 > Leading up to the expected next version of JS (slipped from 2013 to 2014 and then 2015), the obvious and common label in discourse has been ES6.
 >
-> Extract from [YDKJS - ES6 & Beyond](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/es%3Anext%20%26%20beyond/ch1.md#versioning) by Kyle Simpson
+> Extract from [YDKJS - ES6 & Beyond](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch1.md#versioning) by Kyle Simpson
 
 What is important to understand is that **until ES6** all versions were **ordinal versioned** and the release pace was **freaking slow** mostly because the browsers weren't decoupled from the OS and therefore any change should be integrated at OS releasing scale.
 
 Since ES6 - AKA ES2015, a year-based schema was introduced to reflect and support the fast development pace of JavaScript particularly impulsed by the decoupling of the Web Browsers from OS first but also due to the expansive adoption of the language and the growth of its use beyond "just swapping a button img on rollover" (A very interesting article about that was written by **Matthew MacDonald**, [read it here](https://medium.com/young-coder/how-javascript-grew-up-and-became-a-real-language-17a0b948b77f)).
 
 From ES2015 the standardization process started behaving as a **living standard** hence not tied to structured cuts but by an release based on continuous consensus and progressive adoption.
-In order to keep the pace, several improvements were required under the hood to keep it stable and scalable. Browsers will then adopt the new features based at their own pace, which left on the engineering side the responsibility for maintaining the backward compatibility, what led to an extensive growth of techniques such as [polyfilling](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/es%3Anext%20%26%20beyond/ch1.md#shimspolyfills) and [transpiling](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/es%3Anext%20%26%20beyond/ch1.md#transpiling)
+In order to keep the pace, several improvements were required under the hood to keep it stable and scalable. Browsers will then adopt the new features based at their own pace, which left on the engineering side the responsibility for maintaining the backward compatibility, what led to an extensive growth of techniques such as [polyfilling](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch1.md#shimspolyfills) and [transpiling](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch1.md#transpiling)
 
-Tons of publications can be found online comparing both standards; you can read them online. I'd suggest to start with clean unbiased documents such as the [ecma-262 5.1](https://www.ecma-international.org/ecma-262/5.1) and [ecma-262 6.0](https://www.ecma-international.org/ecma-262/6.0/) ... but some find that too tedious :D ... you can check also this [ECMAScript 6 — New Features: Overview & Comparison](http://es6-features.org/) by Ralf S. Engelschall which I find very interesting, or jump into the excellent [You Don't Know JS book series](https://github.com/getify/You-Dont-Know-JS/) by Kyle Simpson, especially on the dedicated book [ES6 & Beyond](https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/es:next%20%26%20beyond) by Kyle Simpson
+Tons of publications can be found online comparing both standards; you can read them online. I'd suggest to start with clean unbiased documents such as the [ecma-262 5.1](https://262.ecma-international.org/5.1/index.html) and [ecma-262 6.0](https://262.ecma-international.org/6.0/) ... but some find that too tedious :D ... you can check also this [ECMAScript 6 — New Features: Overview & Comparison](http://es6-features.org/) by Ralf S. Engelschall which I find very interesting, or jump into the excellent [You Don't Know JS book series](https://github.com/getify/You-Dont-Know-JS/) by Kyle Simpson, especially on the dedicated book [ES6 & Beyond](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/) by Kyle Simpson
 
 My summary is:
 
@@ -117,13 +116,12 @@ Well, by the time being we're on the [ES2019 version](https://www.ecma-internati
 ## Initial workspace setup
 
 1. [Install Node.js](https://nodejs.org/en/)
+   1. Alternatively you can Install Volta (https://volta.sh/) which is a great Node.js version manager
 2. [Install VS Code](https://code.visualstudio.com/)
 3. Add the following extensions to VS Code
    1. [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
    2. [EsLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-   3. [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 4. [Introduction to NPM](https://docs.npmjs.com/about-npm/)
-
 
 ***
 [Go next to DAY 2](/day_02.md)
