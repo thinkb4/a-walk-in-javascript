@@ -13,32 +13,32 @@
       - [Null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type)
       - [Undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
       - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
-      - [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) ( it's still a [Stage 3 proposal](https://github.com/tc39/proposal-bigint) but Chrome already support it and Firefox and Safari are underway. )
+      - [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type)
       - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-      - [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type) ( new in ES6! )
+      - [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type)
     - [Composite/Compound](#compositecompound)
       - [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Objects)
   - [Type conversion](#type-conversion)
     - Explicit ( "type casting" )
     - Implicit ( Coercion )
 - [Operators](#operators)
-  - [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
-  - [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison)
-  - [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Arithmetic)
-  - [Bitwise operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Arithmetic)
-  - [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Logical)
-  - [String operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#String)
-  - [Conditional (ternary) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Conditional)
-  - [Comma operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comma)
-  - [Unary operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Unary)
-  - [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Relational)
+  - [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment_operators)
+  - [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators)
+  - [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#arithmetic_operators)
+  - [Bitwise operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise_operators)
+  - [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators)
+  - [String operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators)
+  - [Conditional (ternary) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#conditional_ternary_operator)
+  - [Comma operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comma_operator)
+  - [Unary operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#unary_operators)
+  - [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#relational_operators)
   - [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
   - [Operators Precedence](#operators-precedence)
   - [Spread/Rest](#the-case-of-the---spreadrest-operator-)
 
 ## Syntax, Grammar & Semantics
 
-As communicational beings that we are, we all acquire some grade of expertise in one or more kind of languages, which can be expressed through sounds, images, a combination of the first two and an expression of the first through the second, known as characters, that can communicate complete ideas ( e.g. ideograms, icons, emoji ) or sounds ( e.g alphabet ). In our effort to understand languages and the permutations that govern the meaning of that expression, at some point we start defining those rules so everyone can understand, learn and reproduce accurately the language. Programming languages ar no exception.  
+As communicational beings that we are, we all acquire some grade of expertise in one or more kind of languages, which can be expressed through sounds, images, a combination of the first two and an expression of the first through the second, known as characters, that can communicate complete ideas ( e.g. ideograms, icons, emoji ) or sounds ( e.g alphabet ). In our effort to understand languages and the permutations that govern the meaning of that expression, at some point we start defining those rules so everyone can understand, learn and reproduce accurately the language. Programming languages are no exception.  
 We're not going to dive deep into nuances and details since it'd require long years of study, but we can briefly take a look at the surface to have a better understanding of what's coming next.
 
 > In computer science, the syntax of a computer language is the set of rules that defines the combinations of symbols that are considered to be a correctly structured document or fragment in that language. This applies both to programming languages, where the document represents source code, and to markup languages, where the document represents data.  
@@ -89,7 +89,7 @@ Here some categories:
 
 - [Control Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#Control_flow)
   > Determinate the flow of a program
-- [Declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#Declarations)
+- [Declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#declaring_variables)
   > Describes an [identifier/token](https://en.wikipedia.org/wiki/Identifier#In_computer_languages) ( A lexical token or simply token is a string with an assigned and thus identified meaning [*](https://en.wikipedia.org/wiki/Lexical_analysis#Token) ) and optionally initializing it to a value.
 - [Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#Iterations)
   > Iteration is the repetition of a process in order to generate a (possibly unbounded) sequence of outcomes. The sequence will approach some end point or end value. Each repetition of the process is a single iteration, and the outcome of each iteration is then the starting point of the next iteration.
@@ -114,7 +114,7 @@ Interesting to take in consideration that:
 > In most languages, **statements** contrast with **expressions** in that statements do not return results and are executed solely for their side effects, while expressions always return a result and often do not have side effects at all.
 > Source: [Wikipedia](https://en.wikipedia.org/wiki/Statement_(computer_science)#Expressions)
 
-Also interesting to see how Kyle Simpson explains how the simple statement
+Also interesting to see Kyle Simpson explaining how this simple statement
 
 ```javascript
 a = b * 2;
@@ -126,9 +126,9 @@ You can learn more from his [YDKJS - Types & Grammar](https://github.com/getify/
 
 ### Semantics
 
-So far most of the definitions an examples could fairly understood left-to-right based on the **form** ( **syntax** ) but as every language, several syntactically similar structures might mean different things depending on the context, and that **meaning** are ruled by the [semantics](https://en.wikipedia.org/wiki/Semantics_(computer_science)).
+So far most of the definitions and examples could be fairly understood left-to-right based on the **form** ( **syntax** ) but as every language, several syntactically similar structures might mean different things depending on the context, and that **meaning** are ruled by the [semantics](https://en.wikipedia.org/wiki/Semantics_(computer_science)).
 
-Again Kyle Simpson provides an awesome example of [Contextual Rules](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#contextual-rules) especially for the case of the [Curly Braces](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#blocks) which is shockingly simple that scares.
+Again Kyle Simpson provides an awesome example of [Contextual Rules](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#contextual-rules) especially for the case of the [Curly Braces](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#blocks) which is so shockingly simple that scares.
 
 ## ECMAScript Types
 
@@ -142,10 +142,10 @@ Now let's destroy another myth.
 
 > **[MYTH]** JavaScript doesn't have types
 
-In order bust that myth the only thing we need is to carefully read the spec! A word is repeated several times and it's "**value**"!  
+In order bust that myth the only thing we need to do is to carefully read the spec! A word is repeated several times and it's "**value**"!  
 Why is that so important? Because in JavaScript, TYPES is all about VALUES, it doesn't matter the name of an identifier, nor the way you initialized your variable, neither the initial type of the value you assigned to the variable. The TYPE will, ultimately be determined at runtime and if needed it will be [transformed implicitly into another type](http://www.ecma-international.org/ecma-262/6.0/#sec-type-conversion), if needed, in order to operate with that value consistently. The latter mechanism is called [coercion](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch4.md) and we'll explain it later today.
 
-It's said to be "[weak-typed](https://en.wikipedia.org/wiki/Programming_language#Weak_and_strong_typing)" but I find "[dynamically-typed](https://en.wikipedia.org/wiki/Programming_language#Static_versus_dynamic_typing)" more expressive.
+It's said to be "[weak-typed](https://en.wikipedia.org/wiki/Programming_language#Weak_and_strong_typing)" but I find "[dynamically-typed](https://en.wikipedia.org/wiki/Programming_language#Static_vis-à-vis_dynamic_typing)" more expressive.
 
 ### Value type groups
 
@@ -157,22 +157,22 @@ ES2015 standard defines eight data types organized in two groups.
 - [Null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Null_type)
 - [Undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Undefined_type)
 - [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type)
-- [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) ( it's still a [Stage 3 proposal](https://github.com/tc39/proposal-bigint) but Chrome already support it and Firefox and Safari are underway. )
+- [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type)
 - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-- [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type) ( new in ES6! )
+- [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type)
 
 #### [Composite/Compound](https://en.wikipedia.org/wiki/Composite_data_type)
 
 - [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Objects)
 
-Bibliography related to ECMAScript types is huge, sometimes too cryptic, sometimes too light, and unfortunately many times confusing when not inaccurate. As you might already understand, one of my favorites is Kyle Simpson, one of he's books there's a chapter dedicated to types which covers most of them ad exception of [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) which came out after his first edition. Let's jump into [YDKJS: Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch1.md#built-in-types)
+Bibliography related to ECMAScript types is huge, sometimes too cryptic, sometimes too light, and unfortunately many times confusing when not inaccurate. As you might already understand, one of my favorites is Kyle Simpson, one of he's books there's a chapter dedicated to types which covers most of them except for [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) which came out after his first edition. Let's jump into [YDKJS: Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch1.md#built-in-types)
 
 ### Type Conversion
 
-In order to be able to dynamically convert the type of a value during evaluation, both explicit ( intentional "casting" ) or implicit ( automatic coercion ) conversion will use the same mechanism.
+In order to be able to dynamically convert the type of a value during evaluation - both explicit conversion ( intentional "casting" ) or implicit conversion ( automatic coercion ) - will use the same mechanism.
 E.g. If the value is and `object` and the operations requires a `primitive` output, it'll look for the appropriate method [toPrimitive](http://www.ecma-international.org/ecma-262/6.0/#sec-toprimitive) which will convert its input argument to a non-Object type. If an object is capable of converting to more than one primitive type, it may use the optional hint PreferredType to favour that type. If it's a `primitive` and an `object` is needed, it'll all the [ToObject](http://www.ecma-international.org/ecma-262/6.0/#sec-toobject) abstract operation in order to perform the required transformation and eventually return a [Primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#Primitive_wrapper_objects_in_JavaScript) aka [Boxing Wrapper](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#boxing-wrappers).
 
-Several things might go wrong during this conversion al all the cases are captured on the spec, but since specs, sometimes are hard to follow, I'd love to show you some practical examples from [YDKJS: Types & Grammar - Natives](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#chapter-3-natives)
+Several things might go wrong during this conversion and all the cases are captured on the spec, but since specs, sometimes are hard to follow, I'd love to show you some practical examples from [YDKJS: Types & Grammar - Natives](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#chapter-3-natives)
 
 Since implicit conversion, called **coercion** is one of the most misunderstood characteristics of JavaScript, let's have a read at [YDKJS: Types & Grammar - Coercion](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch4.md#chapter-4-coercion)
 
@@ -192,16 +192,16 @@ What does ECMAScript have to say about it?
 
 Let's have an overview at [MDN Web Docs - Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
-- [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Assignment)
-- [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison)
-- [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Arithmetic)
-- [Bitwise operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Arithmetic)
-- [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Logical)
-- [String operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#String)
-- [Conditional (ternary) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Conditional)
-- [Comma operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comma)
-- [Unary operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Unary)
-- [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Relational)
+- [Assignment operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment_operators)
+- [Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators)
+- [Arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#arithmetic_operators)
+- [Bitwise operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise_operators)
+- [Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators)
+- [String operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators)
+- [Conditional (ternary) operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#conditional_ternary_operators)
+- [Comma operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comma_operator)
+- [Unary operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#unary_operators)
+- [Relational operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#relational_operators)
 
 Interesting to know:
 
@@ -211,7 +211,7 @@ Interesting to know:
 
 Another noteworthy feature introduced on ES6 is the [Destructuring Assignment](http://www.ecma-international.org/ecma-262/6.0/#sec-destructuring-assignment). We're gonna get deeper into it later on this course but to have an appetizer :P let's see some examples at [MDN - Expressions - Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
-If you want to dive into how operators are defined by the spec, there's a complete section dedicated to the [ECMAScript Language: Expressions](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-expressions) or you can take a look at section 12 of the [Table of contents](http://www.ecma-international.org/ecma-262/6.0/#contents)to check them individually.
+If you want to dive into how operators are defined by the spec, there's a complete section dedicated to the [ECMAScript Language: Expressions](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-expressions) or you can take a look at section 12 of the [Table of contents](http://www.ecma-international.org/ecma-262/6.0/#contents) to check them individually.
 
 ### Operators precedence
 
@@ -226,7 +226,7 @@ You can search for **SpreadElement** on the [spec](http://www.ecma-international
 
 A clearer approach can be found on MDN
 
-- [Left-hand-side expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Left-hand-side_expressions)
+- [Operator Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#spread_syntax)
 - [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 - [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 
