@@ -111,7 +111,7 @@ Essentially because even though you will still work with legacy pre-ES6 code, ho
 
 ### After ES6?
 
-Well, by the time being we're on the [ES2019 version](https://www.ecma-international.org/ecma-262/10.0/) ... though funny they still use a their URI with the ordinal version ( see the link ) instead of the year-based ... ¯\\_(ツ)_/¯ ... and the features included are following a 4-stages revision flow described on the [Technical Committee 39 (aka TC39) web site](https://tc39.es/process-document/)
+Well, by the time being we're on the [ES2019 version](https://262.ecma-international.org/10.0/) ... though funny they still use a their URI with the ordinal version ( see the link ) instead of the year-based ... ¯\\_(ツ)_/¯ ... and the features included are following a 4-stages revision flow described on the [Technical Committee 39 (aka TC39) web site](https://tc39.es/process-document/)
 
 ## Initial workspace setup
 
