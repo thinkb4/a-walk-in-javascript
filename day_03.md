@@ -14,7 +14,7 @@
 
 ## Objects, the big picture
 
-First we went through an introduction of the language, then we jumped into the syntax, grammar and types where we realized that "not everything in javascript is an object!", Primitives are not objects and they're immutable! and we also noted the Object type in JS has many flavors ( aka sub-types ), but ... what's an object? what can ww do with them? what's the use?
+First we went through an introduction of the language, then we jumped into the syntax, grammar and types where we realized that "not everything in javascript is an object!", Primitives are not objects and they're immutable! and we also noted Object type in JS has many flavors ( aka sub-types ), but ... what's an object? what can we do with them? what's the use?
 
 Let's try to grab some insight from the documentation available online starting with the first occurrence on the ECMA2015 spec.
 
@@ -88,11 +88,11 @@ In order to create a new object we can use 3 different syntax
 2. [Static built-in constructor method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#Syntax) ( `Object.create(proto, [propertiesObject])` )
 3. [Object constructor notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Syntax)  ( `new Object()` )
 
-Each one of the forms will provide you different characteristics but all will end up creating the same thing, a n ew object. I listed them in order being the first the most common and the third the least used.
+Each form provides different characteristics but all will end up creating the same thing, a new object. I listed them in order, being the first the most common one and the third the least used.
 
 ## Properties
 
-As we saw before, properties come in two flavors which can be defined in terms of `descriptors`, `data descriptors` and `accessor descriptors`.
+As we saw before, properties come in two flavors which can be defined in terms of `descriptors`: `data descriptors` and `accessor descriptors`.
 
 > A data descriptor is a property that has a value, which may or may not be writable. An accessor descriptor is a property described by a getter-setter pair of functions. A descriptor must be one of these two flavors; it cannot be both.
 >
@@ -162,7 +162,7 @@ Now let's take a look at one of the most powerful aspects of the prototype syste
 
 ## Exotic Objects
 
-We've learn that exotic are object that does not have the default behavior for one or more of the essential internal methods that must be supported by all objects. But What's does it means a which examples do we have?
+We've learn that exotic ones are objects that do not have the default behavior for one or more of the essential internal methods that must be supported by all objects. But What's does it means a which examples do we have?
 
 Let's check the spec
 
