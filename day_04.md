@@ -23,7 +23,7 @@ Collections
   - [Maps](http://www.ecma-international.org/ecma-262/6.0/#sec-map-objects) & [Sets](http://www.ecma-international.org/ecma-262/6.0/#sec-set-objects)
   - [Weak Maps](http://www.ecma-international.org/ecma-262/6.0/#sec-weakmap-objects) & [Weak Sets](http://www.ecma-international.org/ecma-262/6.0/#sec-weakset-objects)
 
-Mastering all of them is a long journey and out of scope for a 1-day-walk , so let's have a summary from MDN before moving forward with Arrays.
+Mastering all of them is a long journey and is out of scope for a 1-day-walk , so let's have a summary from MDN before moving forward with Arrays.
 
 > Arrays are regular objects for which there is a particular relationship between integer-key-ed properties and the 'length' property. Additionally, arrays inherit from `Array.prototype` which provides to them a handful of convenient methods to manipulate arrays. For example, [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) (searching a value in the array) or [`push`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/push) (adding an element to the array), etc. This makes Arrays a perfect candidate to represent lists or sets.
 >
@@ -48,7 +48,7 @@ Let's start with MDN First Steps introduction:
 >
 > Source: [MDN Online](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
 
-Also we can have further insights at the Global Objects reference:
+We can have further insights at the Global Objects reference:
 
 > Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using typed arrays.
 >
@@ -96,16 +96,16 @@ The Array Object has a lot of functionalities packed in and ready for use, they 
 
 Methods hierarchy
 
-- [Static](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods) ( Constructor level access )
+- [Static](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#static_methods) ( Constructor level access )
   > Creation and validation.
   > No instance required, not really static for JS but calling them Constructor access sounds even more misleading
-- [Instance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2) ( Prototype chain level access )
+- [Instance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods) ( Prototype chain level access )
   > Accessible through the prototype chain for every initialized array
-  - [Mutators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Mutator_methods)
+  - [Mutators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#copying_methods_and_mutating_methods)
      > Upon execution they will modify the array
-  - [Accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Accessor_methods)
+  - [Accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#copying_methods_and_mutating_methods)
      > They'll work with the array entries and return a new array with the results. No modification of the original array will be done.
-  - [Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods)
+  - [Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#iterative_methods)
      > They provide a way to walk through the entries of an array, some of them accept a callback. Technically they don't modify the original array unless you explicitly define that behavior on the callback.
 
 Aaaand, we have all built-in methods Objects have.
