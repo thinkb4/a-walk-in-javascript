@@ -16,7 +16,7 @@
 
 First we went through an introduction of the language, then we jumped into the syntax, grammar and types where we realized that "not everything in javascript is an object!", Primitives are not objects and they're immutable! and we also noted Object type in JS has many flavors ( aka sub-types ), but ... what's an object? what can we do with them? what's the use?
 
-Let's try to grab some insight from the documentation available online starting with the first occurrence on the ECMA2015 spec.
+Let's try to get some insight from the documentation available online starting with the first occurrence on the ECMA2015 spec.
 
 > Even though ECMAScript includes syntax for class definitions, ECMAScript objects are not fundamentally class-based such as those in C++, Smalltalk, or Java. Instead objects may be created in various ways including via a literal notation or via constructors which create objects and then execute code that initializes all or part of them by assigning initial values to their properties. Each constructor is a function that has a property named "prototype" that is used to implement prototype-based inheritance and shared properties.
 >
@@ -60,7 +60,7 @@ Great, now we know this:
   - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
     > Note that even when using variables for [Computed property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names), unless they're symbols, they will be ultimately converted into their string representation witch might end up overwriting an existent property ( e.g. resulting in `[object Object]` by using two different variables containing 2 different objects )
   - [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type)
-    > No overwriting is happening unless you use a variable containing the same symbol
+    > No overwriting is happening unless you use a variable containing the same symbol (*Symbols are out of this course's scope but you can read more [ here](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch7.md#well-known-symbols)*)
 - Properties values can be of any valid ECMAScript type ( including objects and all subtypes of object )
 - Properties have hierarchy
   - [Own properties](http://www.ecma-international.org/ecma-262/6.0/#sec-own-property)
@@ -184,3 +184,7 @@ The default Object "constructor" comes with several utility methods, let's check
 Alright, objects everywhere, some of them come together with the language ( [built-in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) objects ) and some other are defined by the host application ( e.g [Web API](https://developer.mozilla.org/en-US/docs/Web/API) exposed by the browser )
 
 Let's concentrate on the [built-in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) for now.
+
+### Why aren't we talking about `this` yet?
+
+Simply because `this` is not an object! and it's not about objects, it's about bindings, context, and function calls. We'll talk about `this` on [day 7](day_07.md) after learning functions, execution context and scope which are prerequisites to understand what `this` is and how it works.

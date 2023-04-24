@@ -23,7 +23,7 @@ Collections
   - [Maps](http://www.ecma-international.org/ecma-262/6.0/#sec-map-objects) & [Sets](http://www.ecma-international.org/ecma-262/6.0/#sec-set-objects)
   - [Weak Maps](http://www.ecma-international.org/ecma-262/6.0/#sec-weakmap-objects) & [Weak Sets](http://www.ecma-international.org/ecma-262/6.0/#sec-weakset-objects)
 
-Mastering all of them is a long journey and is out of scope for a 1-day-walk , so let's have a summary from MDN before moving forward with Arrays.
+Mastering all of them is a long journey and is out of scope for a 4th-day-walk , so let's have a summary from MDN before moving forward with Arrays.
 
 > Arrays are regular objects for which there is a particular relationship between integer-key-ed properties and the 'length' property. Additionally, arrays inherit from `Array.prototype` which provides to them a handful of convenient methods to manipulate arrays. For example, [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) (searching a value in the array) or [`push`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/push) (adding an element to the array), etc. This makes Arrays a perfect candidate to represent lists or sets.
 >
@@ -84,7 +84,7 @@ a.length;
 **You can't hold no entry 3 if you ain't got no 0, 1 and 2**
 *( thanks [Victor Wooten](https://www.youtube.com/watch?v=KoeRB5ZmXkk) for that!! )*
 
-My suggestion, if you don't expect German and English syntax and semantic to be the same, why should you expect that from programming languages? Embrace the languages characteristics and grok them so you can master them and enjoy their uniqueness.
+My suggestion, if you don't expect Chinese and English syntax and semantic to be the same, why should you expect that from programming languages? Embrace the languages characteristics and grok them so you can master them and enjoy their uniqueness.
 
 ### Syntax
 
