@@ -60,7 +60,7 @@ Great, now we know this:
   - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
     > Note that even when using variables for [Computed property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names), unless they're symbols, they will be ultimately converted into their string representation witch might end up overwriting an existent property ( e.g. resulting in `[object Object]` by using two different variables containing 2 different objects )
   - [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type)
-    > No overwriting is happening unless you use a variable containing the same symbol (*Symbols are out of this course's scope but you can read more [ here](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch7.md#well-known-symbols)*)
+    > No overwriting is happening unless you use a variable containing the same symbol (*Symbols are out of this course's scope but you can read more [here](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch7.md#well-known-symbols)*)
 - Properties values can be of any valid ECMAScript type ( including objects and all subtypes of object )
 - Properties have hierarchy
   - [Own properties](http://www.ecma-international.org/ecma-262/6.0/#sec-own-property)
