@@ -609,17 +609,17 @@ Let's see [YDKJS - Scope & Closures - Hoisting](https://github.com/getify/You-Do
  * in ECMAScript
  */
 
-var f, g;
-
 function foo() {
-  var x;
-  f = function() { return ++x; };
-  g = function() { return --x; };
+  let x;
+  let f = function() { return ++x; };
+  let g = function() { return --x; };
   x = 1;
   alert('inside foo, call to f(): ' + f());
+  return {f,g}
 }
 
-foo();  // 2
+let { f, g } = foo();  // 2
+
 alert('call to g(): ' + g());  // 1 (--x)
 alert('call to g(): ' + g());  // 0 (--x)
 alert('call to f(): ' + f());  // 1 (++x)
