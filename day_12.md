@@ -20,7 +20,7 @@
 
 Ok nice, but, what's that?
 
-A better explanation is defined later on that document
+A better explanation is defined later on in that document
 
 <div style="border: solid 1px transparent; padding:20px; border-left-width:5px; border-left-color:#ccc;">
 
@@ -45,7 +45,7 @@ Source [Wikipedia](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 Now that's better, if we think in terms of unpacking it's much easier to understand.
 
-But this is only the beginning, this new feature enables a lot of new patterns which were hard to write and maintain before ES6 or event impossible to write.
+But this is only the beginning, this new feature enables a lot of new patterns which were hard to write and maintain before ES6 or even impossible to write.
 
 Object destructuring:
 
@@ -110,7 +110,7 @@ f(); // will throw
 f({a:'hi'}); // will return "hi, 0"
 ```
 
-Let's take some time an go through the following documents:
+Let's take some time and go through the following documents:
 
 - [MDN: Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 - [YDKJS: ES6 & Beyond : Syntax -> Destructuring](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch2.md#destructuring)
@@ -155,7 +155,7 @@ add_curry(3)(4); // 7
 ```javascript
 
 const message = 'Today, [date], [user] says [salutation]';
-const message2 = 'Hellow [user] you have to say [salutation] before the end of [date]';
+const message2 = 'Hello [user] you have to say [salutation] before the end of [date]';
 const date = new Date();
 const user = { name: 'Javier', surname: 'Valderrama', nickName: 'jax' };
 const salutation = 'hi';
@@ -277,7 +277,7 @@ multiLevelPartialRight(
 
 ### First-class composition
 
-> In computer science, function composition is an act or mechanism to **combine** simple functions to build more complicated ones. Like the usual composition of functions in mathematics, **the result of each function is passed as the argument of the next, and the result of the last one is the result of the whole**. [Wikipedia](https://en.wikipedia.org/wiki/Function_composition_(computer_science))
+> In computer science, function composition is an act or mechanism used to **combine** simple functions to build more complicated ones. Like the usual composition of functions in mathematics, **the result of each function is passed as the argument of the next, and the result of the last one is the result of the whole**. [Wikipedia](https://en.wikipedia.org/wiki/Function_composition_(computer_science))
 
 Simple use-case
 > If an airplane's elevation at time `t` is given by the function `h(t)`, and the oxygen concentration at elevation `x` is given by the function `c(x)`, then `(c ∘ h)(t)` describes the oxygen concentration around the plane at time `t`. [Wikipedia](https://en.wikipedia.org/wiki/Function_composition#Examples)
@@ -369,3 +369,8 @@ composeRight(
 - [JavaScript Function Composition, Currying, and Partial Application](https://medium.com/wdstack/javascript-function-composition-currying-and-partial-application-5a04107530ee)
 - [Curry or Partial Application?](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8)
 - [Creating partially applied functions in Javascript](https://codeburst.io/creating-partially-applied-functions-in-javascript-1f623a56d055)
+
+***
+[Go back to DAY 11](/day_11.md)
+***
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-12)

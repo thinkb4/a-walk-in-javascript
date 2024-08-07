@@ -25,7 +25,7 @@ Collections
 
 Mastering all of them is a long journey and is out of scope for a 4th-day-walk , so let's have a summary from MDN before moving forward with Arrays.
 
-> Arrays are regular objects for which there is a particular relationship between integer-key-ed properties and the 'length' property. Additionally, arrays inherit from `Array.prototype` which provides to them a handful of convenient methods to manipulate arrays. For example, [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) (searching a value in the array) or [`push`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/push) (adding an element to the array), etc. This makes Arrays a perfect candidate to represent lists or sets.
+> Arrays are regular objects that have a specific relationship between integer-key-ed properties and the 'length' property. Additionally, arrays inherit from `Array.prototype` which provides a handful of convenient methods to manipulate arrays. For example, [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) (searching a value in the array) or [`push`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/push) (adding an element to the array), etc. This makes Arrays a perfect candidate to represent lists or sets.
 >
 > Typed Arrays are new to JavaScript with ECMAScript 2015 and present an array-like view of an underlying binary data buffer.
 >
@@ -58,7 +58,7 @@ We can have further insights at the Global Objects reference:
 
 That was a lot!
 
-In the last paragraph it is clear that Arrays in JavaScript defer from other languages, they're **list-like objects** with a lot of particular mechanisms to work with a numeric-auto-indexed-key but at the end, they're objects, hence inheriting all it's characteristics.
+In the last paragraph it is clear that Arrays in JavaScript differ from other languages, they're **list-like objects** with a lot of particular mechanisms to work with a numeric-auto-indexed-key but at the end, they're objects, hence inheriting all its characteristics.
 
 ```javascript
 // example of auto-index gotcha in JavaScript
@@ -88,11 +88,11 @@ My suggestion, if you don't expect Chinese and English syntax and semantic to be
 
 ### Syntax
 
-Now we know an array can be initialized in two ways ( there are others we'll see later on ), `[element0, element1, ..., elementN]]` a.k.a. [literal notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Array_literals) or through `new Array(element0, element1[, ...[, elementN]])` and `new Array(arrayLength)` the global object Array constructor method, being the former ( literal notation ) the recommended one for most of the cases.
+Now we know an array can be initialized in two ways ( there are others we'll see later on ), `[element0, element1, ..., elementN]]` a.k.a. [literal notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Array_literals) or through `new Array(element0, element1[, ...[, elementN]])` and `new Array(arrayLength)` the global object Array constructor method, the former ( literal notation ) being the recommended way for most of the cases.
 
 ### Array Built-in methods
 
-The Array Object has a lot of functionalities packed in and ready for use, they come in 2 flavor ( [déjà vu](https://en.wikipedia.org/wiki/D%C3%A9j%C3%A0_vu) ), [Static access](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods) and [Instance access](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2), and they will provide you the necessary tools to work efficiently with the collection.
+The Array Object has a lot of functionalities packed in and ready for use, they come in 2 flavors ( [déjà vu](https://en.wikipedia.org/wiki/D%C3%A9j%C3%A0_vu) ), [Static access](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods) and [Instance access](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2), and they will provide you with the necessary tools to work with the collection efficiently.
 
 Methods hierarchy
 
@@ -112,7 +112,7 @@ Aaaand, we have all built-in methods Objects have.
 
 ### Preliminary Practice
 
-Now let's have some time to practice creating, accessing, mutating, copying, iterating, merging arrays and entries.
+Now let's take some time to practice creating, accessing, mutating, copying, iterating, merging arrays and entries.
 
 Here a list of resources we can use:
 
@@ -133,3 +133,8 @@ Now open your terminal.
 3. Type `npm run test:watch`, this will start running your tests every time you make a change.
 
 **Our task is to make ALL our DAY 4 tests pass ;)**
+
+***
+[Go back to DAY 3](/day_03.md) or [Go next to DAY 5](/day_05.md)
+***
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-4)

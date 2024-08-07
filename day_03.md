@@ -14,7 +14,7 @@
 
 ## Objects, the big picture
 
-First we went through an introduction of the language, then we jumped into the syntax, grammar and types where we realized that "not everything in javascript is an object!", Primitives are not objects and they're immutable! and we also noted Object type in JS has many flavors ( aka sub-types ), but ... what's an object? what can we do with them? what's the use?
+First we went through an introduction of the language, then we jumped into the syntax, grammar and types where we realized that "not everything in javascript is an object!", Primitives are not objects and they're immutable! and we also noted Object type in JS has many flavors ( aka sub-types ), but ... what's an object? what can we do with them? what are they for?
 
 Let's try to get some insight from the documentation available online starting with the first occurrence on the ECMA2015 spec.
 
@@ -58,15 +58,15 @@ Great, now we know this:
   - accessor property
 - Properties identifiers ( keys ) come in 2 flavors
   - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type)
-    > Note that even when using variables for [Computed property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names), unless they're symbols, they will be ultimately converted into their string representation witch might end up overwriting an existent property ( e.g. resulting in `[object Object]` by using two different variables containing 2 different objects )
+    > Note that even when using variables for [Computed property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names), unless they're symbols, they will be ultimately converted into their string representation which might end up overwriting an existent property ( e.g. resulting in `[object Object]` by using two different variables containing 2 different objects )
   - [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Symbol_type)
     > No overwriting is happening unless you use a variable containing the same symbol (*Symbols are out of this course's scope but you can read more [here](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch7.md#well-known-symbols)*)
-- Properties values can be of any valid ECMAScript type ( including objects and all subtypes of object )
+- Property values can be of any valid ECMAScript type ( including objects and all subtypes of object )
 - Properties have hierarchy
   - [Own properties](http://www.ecma-international.org/ecma-262/6.0/#sec-own-property)
     > those defined at the current object level
   - [Inherited properties](http://www.ecma-international.org/ecma-262/6.0/#sec-inherited-property)
-    > those defined at any higher level of the "inheritance" chain ( [prototype](http://www.ecma-international.org/ecma-262/6.0/#sec-terms-and-definitions-prototype) chain ), and like a Matryoshka, we could have many nesting levels and even circular references!!!
+    > those defined at any higher level of the "inheritance" chain ( [prototype](http://www.ecma-international.org/ecma-262/6.0/#sec-terms-and-definitions-prototype) chain ), and like a Matryoshka, we could have many nested levels and even circular references!!!
 - Objects have sub-types
 - Objects come in 4 flavors and they can belong to more than one flavor at a time
   - [Ordinary](http://www.ecma-international.org/ecma-262/6.0/#sec-ordinary-object-internal-methods-and-internal-slots)
@@ -147,10 +147,10 @@ Please MDN, help us
 
 > Nearly all objects in JavaScript are instances of Object; a typical object inherits properties (including methods) from Object.prototype, although these properties may be shadowed (a.k.a. overridden). However, an Object may be deliberately created for which this is not true (e.g. by Object.create(null)), or it may be altered so that this is no longer true (e.g. with Object.setPrototypeOf).
 >
-> Changes to the Object prototype object are seen by all objects through prototype chaining, unless the properties and methods subject to those changes are overridden further along the prototype chain. This provides a very powerful although potentially dangerous mechanism to override or extend object behavior.
+> Changes to the Object prototype object are seen by all objects through prototype chaining, unless the properties and methods subject to those changes are overridden further along the prototype chain. This provides a very powerful though potentially dangerous mechanism to override or extend object behavior.
 > Source: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
 
-Ok, that's better but can we have a cleared description?
+Ok, that's better, but can we have a clearer description?
 
 Yes!! Let's go to [YDKJS: this & Object Prototypes - Chapter 5 - Prototypes](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch5.md)
 
@@ -162,7 +162,7 @@ Now let's take a look at one of the most powerful aspects of the prototype syste
 
 ## Exotic Objects
 
-We've learn that exotic ones are objects that do not have the default behavior for one or more of the essential internal methods that must be supported by all objects. But What's does it means a which examples do we have?
+We've learned that exotic objects are ones that do not have the default behavior for one or more of the essential internal methods that must be supported by all objects. But what does that mean? and what examples do we have?
 
 Let's check the spec
 
@@ -183,8 +183,13 @@ The default Object "constructor" comes with several utility methods, let's check
 
 Alright, objects everywhere, some of them come together with the language ( [built-in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) objects ) and some other are defined by the host application ( e.g [Web API](https://developer.mozilla.org/en-US/docs/Web/API) exposed by the browser )
 
-Let's concentrate on the [built-in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) for now.
+Let's concentrate on the [built-in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) objects for now.
 
 ### Why aren't we talking about `this` yet?
 
 Simply because `this` is not an object! and it's not about objects, it's about bindings, context, and function calls. We'll talk about `this` on [day 7](day_07.md) after learning functions, execution context and scope which are prerequisites to understand what `this` is and how it works.
+
+***
+[Go back to DAY 2](/day_02.md) or [Go next to DAY 4](/day_04.md)
+***
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-3)

@@ -18,14 +18,14 @@
 
 ## `this` Keyword
 
-Over and over again I see engineers struggling with `this` topic; is so weird!! Long ago I found myself in the same situation, like, being writing code for many years and still ... never took the time to really understand `this` when `this` is one of the most important and powerful features in JavaScript!
-Engineers we feel so frustrated about `this` that there's even a joke for `this`!
+Over and over again I see engineers struggling with `this` topic; it's so weird!! Long ago I found myself in the same situation, like, writing code for many years and still ... never took the time to really understand `this` when `this` is one of the most important and powerful features in JavaScript!
+As engineers, we feel so frustrated about `this` that there's even a joke for `this`!
 
 > JavaScript makes me want to flip the table and say "F*** this shit", but I can never be sure what **`this`** refers to.
 
-The good things came when I took the responsibility of `this` and accepted the guilt was entirely mine.
+Things got better when I took the responsibility of `this` and accepted that the blame was entirely mine.
 
-Why this intro? because there are tons of articles regarding `this` but everything about `this` was written by **Kyle Simpson** who dedicated a whole book for `this` topic , so we're gonna read and study it until we breath `this`.
+Why this intro? because there are tons of articles regarding `this` but everything about `this` was written by **Kyle Simpson** who dedicated a whole book for `this` topic , so we're gonna read and study it until we breathe `this`.
 
 ### Resolving `this`
 
@@ -53,7 +53,7 @@ Now we've learned that `this` has specific rules and it's resolved at run-time, 
 - [Function.prototype.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 - [Function.prototype.call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
 
-Now, there's a catch!!! it seems that depending on a thing called **mode**, that depending on it's [strictness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) or [non-strictness](https://developer.mozilla.org/en-US/docs/Glossary/Sloppy_mode) (a.k.a. Sloppy) it'll alter the semantics and behavior of many things including `this`.
+Now, there's a catch!!! it seems that depending on a thing called **mode**, that depending on its [strictness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) or [non-strictness](https://developer.mozilla.org/en-US/docs/Glossary/Sloppy_mode) (a.k.a. Sloppy) will alter the semantics and behavior of many things including `this`.
 
 ---
 
@@ -71,8 +71,8 @@ Now, there's a catch!!! it seems that depending on a thing called **mode**, that
 #### TL;DR
 
 1. Eliminates some JavaScript `silent errors` by changing them `to throw errors`.
-2. Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode.
-3. Prohibits some syntax likely to be defined in future versions of ECMAScript.
+2. Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not in strict mode.
+3. Prohibits some syntax likely from be defined in future versions of ECMAScript.
 
 ### Semantic differences
 
@@ -100,7 +100,7 @@ When adding `'use strict';` the following cases will throw an Error:
   - Escape characters are not allowed `var y = \010;`
   - Declaring function in blocks `if (a < b) { function f() {} }`
   - Obvious errors
-    - Declaring twice the same name for a property name in an object literal `{a: 1, b: 3, a: 7}` This is no longer the case in ECMAScript 2015 (bug 1041128).
+    - Declaring the same name twice for a property name in an object literal `{a: 1, b: 3, a: 7}` This is no longer the case in ECMAScript 2015 (bug 1041128).
     - Declaring two function parameters with the same name function `f(a, b, b) {}`
 - TypeError
   - Writing to a get-only property is not allowed
@@ -150,7 +150,7 @@ f(); // 6
 
 ```
 
-One of the most expected and misused features of ES6 is the Arrow Function. Undoubtedly powerful it might also derive in a headache if you don't really know how they work and which are the differences between the full body notation and the arrow notation.
+One of the most expected and misused features of ES6 is the Arrow Function. Undoubtedly powerful, it might also derive in a headache if you don't really know how they work and what the differences are between the full body notation and the arrow notation.
 
 Let's take a look at [YDKJS - ES6 & Beyond - chapter 2](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/es6%20%26%20beyond/ch2.md#arrow-functions)
 
@@ -159,7 +159,7 @@ Let's take a look at [YDKJS - ES6 & Beyond - chapter 2](https://github.com/getif
 ## Generators
 
 So far we've seen (except for the iterators) only **[run-to-completion](https://en.wikipedia.org/wiki/Run_to_completion_scheduling)** examples of code. It means, "the execution won't stop until it's done or fails".
-What if I tell you there's a feature that let you define a function capable of being paused midway and resumed later?
+What if I tell you there's a feature that lets you define a function capable of being paused midway and resumed later?
 
 Together with [`iterators`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol) ES6 introduced something called `generators`.
 
@@ -348,3 +348,8 @@ Now open your terminal.
 3. Type `npm run test:watch`, this will start running your tests every time you make a change.
 
 **Our task is to make ALL our DAY 7 tests pass ;)**
+
+***
+[Go back to DAY 6](/day_06.md) or [Go next to DAY 8](/day_08.md)
+***
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-7)

@@ -74,7 +74,7 @@ Thankfully we have two invaluable resources to finally understand the event loop
 
 Let's take a look at a [general definition of callback on Wikipedia](https://en.wikipedia.org/wiki/Callback_(computer_programming))
 
-Here an simplified example of callback you might have used but now you'll know better what it does.
+Here is a simplified example of callback you might have used but now you'll understand more about what it is doing.
 
 ```javascript
 setTimeout( () => console.log(`I'm running late...er`), 1000 );
@@ -263,3 +263,8 @@ Now open your terminal.
 3. Type `npm run test:watch`, this will start running your tests every time you make a change.
 
 **Our task is to make ALL our DAY 9 tests pass ;)**
+
+***
+[Go back to DAY 8](/day_08.md) or [Go next to DAY 10](/day_10.md)
+***
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-9)

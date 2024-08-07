@@ -30,9 +30,10 @@ During this walk we mentioned several times a set of concepts related to JavaScr
 
 Let's remember what are they.
 
-**ECMA International** is an organization dedicate to define and maintain technology standards, one of the standards is **ECMAScript** identified as **ECMA-262** which specifies the rules, details and guidelines so you can create a programming language in **compliance to ECMAScript standard**.
-**JavaScript** is one of this languages (one of many) and even though historically it was created before the standard, today it follows it.
-In order to be interpreted and executed, a programming language might need an **engine**, JavaScript is one of this cases but all ECMAScript compliant languages will need an engine; and this statement will generally apply to the **ECMAScript engine** itself, which will require a **Host Environment** as well.
+**ECMA International** is an organization dedicated to defining and maintaining technology standards, one of the standards is **ECMAScript** identified as **ECMA-262** which specifies the rules, details and guidelines so you can create a programming language in **compliance to the ECMAScript standard**.
+
+**JavaScript** is one of these languages (one of many) and even though historically it was created before the standard, today it follows it.
+In order to be interpreted and executed, a programming language might need an **engine**, JavaScript is one of these cases but all ECMAScript compliant languages will need an engine; and this statement will generally apply to the **ECMAScript engine** itself, which will require a **Host Environment** as well.
 This **Host environment** (a.k.a **ECMAScript Runtime**) will provide to the engine the necessary elements to interact with other systems.
 
 ## The ECMAScript Engine
@@ -41,17 +42,17 @@ This **Host environment** (a.k.a **ECMAScript Runtime**) will provide to the eng
 
 So what does the engine actually do? (briefly)
 
-- once your text file is loaded, the engine will performing a [lexical analysis](https://en.wikipedia.org/wiki/Lexical_analysis) by reading the sequences of characters and try to convert them into a sequence of meaningful strings ([tokens](https://en.wikipedia.org/wiki/Lexical_analysis#Token)) for the specific language (a.k.a. tokenization).
-- once the lexer successfully identifies those meaningful pieces it's time to perform a [syntactic analysis](https://en.wikipedia.org/wiki/Parsing) (parsing) to make sure the tokens can be related making valid expressions.
-- no errors so far, so it's time for a [semantic analysis](https://en.wikipedia.org/wiki/Semantic_analysis_(computer_science)), here a lot of things will happen, essentially to make sure the program can be accurately represented and the resources of the program such as [types](https://en.wikipedia.org/wiki/Type_checking), [bindings](https://en.wikipedia.org/wiki/Object_binding) and [assignments](https://en.wikipedia.org/wiki/Definite_assignment_analysis) are valid and the [Symbol Table](https://en.wikipedia.org/wiki/Symbol_table) could be successfully created and the [intermediate representation](https://en.wikipedia.org/wiki/Intermediate_representation) of the code was generated
-- now what? It's time to convert that IR into something the machine can execute (e.g. [machine code](https://en.wikipedia.org/wiki/Machine_code)). In the modern JavaScript engines (originally introduced by [V8](https://chromium.googlesource.com/v8/v8)) this happens in [runtime](https://en.wikipedia.org/wiki/Run_time_(program_lifecycle_phase)) (during execution) and is known as [JIT](https://en.wikipedia.org/wiki/Just-in-time_compilation)
-- then? Again, pretty much all modern ECMAScript engines, especially JavaScript engines implement some form of optimization (e.g V8's [TurboFan](https://v8.dev/blog/launching-ignition-and-turbofan))
+- Once your text file has been loaded, the engine will perform a [lexical analysis](https://en.wikipedia.org/wiki/Lexical_analysis) by reading the sequences of characters and try to convert them into a sequence of meaningful strings ([tokens](https://en.wikipedia.org/wiki/Lexical_analysis#Token)) for the specific language (a.k.a. tokenization).
+- Once the lexer successfully identifies those meaningful pieces it's time to perform a [syntactic analysis](https://en.wikipedia.org/wiki/Parsing) (parsing) to make sure the tokens can be related making valid expressions.
+- If there are no errors so far, it's time for a [semantic analysis](https://en.wikipedia.org/wiki/Semantic_analysis_(computer_science)). Here a lot of things will happen, essentially to make sure the program can be accurately represented, and the resources of the program such as [types](https://en.wikipedia.org/wiki/Type_checking), [bindings](https://en.wikipedia.org/wiki/Object_binding) and [assignments](https://en.wikipedia.org/wiki/Definite_assignment_analysis) are valid. Additionally it ensures that the [Symbol Table](https://en.wikipedia.org/wiki/Symbol_table) was successfully created and the [intermediate representation](https://en.wikipedia.org/wiki/Intermediate_representation) of the code was generated
+- Now what? It's time to convert that IR into something the machine can execute (e.g. [machine code](https://en.wikipedia.org/wiki/Machine_code)). In the modern JavaScript engines (originally introduced by [V8](https://chromium.googlesource.com/v8/v8)) this happens in [runtime](https://en.wikipedia.org/wiki/Run_time_(program_lifecycle_phase)) (during execution) and is known as [JIT](https://en.wikipedia.org/wiki/Just-in-time_compilation)
+- Then? Again, pretty much all modern ECMAScript engines, especially JavaScript engines implement some form of optimization (e.g V8's [TurboFan](https://v8.dev/blog/launching-ignition-and-turbofan))
 
 #### Visual guide based on V8
 
 | HEAP (memory allocation)                                                                                                                                                                                                                                                         | EXECUTION CONTEXT STACK (call stack)                                                                                                                                                                                                                                                                                                                                                                         |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Here the engine stores the memory addresses for compound data  ( e.g. objects and object subtypes like functions, arrays).  This memory doesn't depend on the execution context, will be persisted until the Garbage Collector can claim it.   - **Garbage Collector (Orinoco)** | The ECS is tied to the function execution. When a function is called, it'll be added to the stack in a LIFO order. It runs synchronously and when its execution has been completed it'll be popped off the stack and the engine will take the next item on the stack.  Javascript has only ONE ECS, therefore one thing at a time can be executed.  **Interpreters (TurboFan)** -  **Optimizers (Ignition)** |
+| Here the engine stores the memory addresses for compound data  ( e.g. objects and object subtypes like functions, arrays).  This memory doesn't depend on the execution context and will persist until the Garbage Collector can claim it.   - **Garbage Collector (Orinoco)** | The ECS is tied to the function execution. When a function is called, it'll be added to the stack in a LIFO order. It runs synchronously and when its execution has been completed it'll be popped off the stack and the engine will take the next item on the stack.  Javascript has only ONE ECS, therefore one thing at a time can be executed.  **Interpreters (TurboFan)** -  **Optimizers (Ignition)** |
 
 ### How many of them are there?
 
@@ -59,7 +60,7 @@ More than 30
 
 <img src="https://i.imgur.com/ywOjtAC.png" width="250"/>
 
-Yup, at least that's the list of known implementation but there might be more. Some of them compile to machine code using JIT, some doesn't, some are new, or old, designed for web browsers or to be embedded.
+Yup, at least that's the list of known implementations but there might be more. Some of them compile to machine code using JIT, some don't, some are new, or old, designed for web browsers or to be embedded.
 
 You can check a quite long List of [ECMAScript engines in Wikipedia](https://en.wikipedia.org/wiki/List_of_ECMAScript_engines)
 
@@ -102,7 +103,7 @@ Here some more cases of mixed environments differences from [YDKJS: Types & Gram
 
 ## Javascript and the web
 
-Despite the fact that JavaScript, today, is much more than a language for the web; it's still one of the heaviest usage of the language, particularly webb applications delivered as "web pages". Therefore is extremely important that you know not only JavaScript but also HTML and CSS (.there's an interesting [Roadmap to becoming a web developer in 2019](https://github.com/kamranahmedse/developer-roadmap) written by Kamran Ahmed if you want to read more)
+Despite the fact that JavaScript, today, is much more than a language for the web; it's still one of the heaviest usage of the language, particularly webb applications delivered as "web pages". Therefore is extremely important that you know not only JavaScript but also HTML and CSS (there's an interesting [Roadmap to becoming a web developer in 2019](https://github.com/kamranahmedse/developer-roadmap) written by Kamran Ahmed if you want to read more)
 
 We won't get deep into them as that's not the scope of this course, but at least we'll review their definitions and some basic features.
 
@@ -128,7 +129,7 @@ We won't get deep into them as that's not the scope of this course, but at least
 >
 > Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or [screen reader](https://en.wikipedia.org/wiki/Screen_reader)), and on [Braille-based](https://en.wikipedia.org/wiki/Braille_display) tactile devices. CSS also has rules for alternate formatting if the content is accessed on a [mobile device](https://en.wikipedia.org/wiki/Mobile_device).
 >
-> The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+> The name "cascading" comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
 >
 > The CSS specifications are maintained by the [World Wide Web Consortium](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) (W3C). Internet media type ([MIME type](https://en.wikipedia.org/wiki/MIME_media_type)) text/css is registered for use with CSS by [RFC 2318](https://tools.ietf.org/html/rfc2318) (March 1998). The W3C operates a free [CSS validation service](https://en.wikipedia.org/wiki/W3C_Markup_Validation_Service#CSS_validation) for CSS documents.
 >
@@ -137,8 +138,8 @@ We won't get deep into them as that's not the scope of this course, but at least
 ## TL;DR
 
 - **JavaScript Engine:** takes care of the analysis and execution of the code
-- **JavaScript Runtime:** takes care of running the JavaScript engine and provide to it the mechanisms to communicate with other systems (e.g. timers, external resources) through specific APIs
-- **HTML:** takes care of presenting the information to the browser in a semantic way by delivering a structured document and inform the browser about external resources required for the presentation (e.g. js, css, fonts)
+- **JavaScript Runtime:** takes care of running the JavaScript engine and provides mechanisms for communicating with other systems (e.g. timers, external resources) through specific APIs
+- **HTML:** takes care of presenting the information to the browser in a semantic way by delivering a structured document and informing the browser about external resources required for the presentation (e.g. js, css, fonts)
 - **CSS:** takes care of defining the structured document (HTML) to cover different presentational (rendering) needs such as visual aspect (e.g desktop vs mobile displays), specific devices (e.g. printers), accessibility (e.g. screen readers, Braille tactile devices)
 
 ## Complementary readings
@@ -149,3 +150,8 @@ We won't get deep into them as that's not the scope of this course, but at least
 - [JavaScript V8 Engine Explained](https://hackernoon.com/javascript-v8-engine-explained-3f940148d4ef) by Kadishay
 - [How JavaScript works: inside the V8 engine + 5 tips on how to write optimized code](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e) by Alexander Zlatkov
 - [Understanding How the Chrome V8 Engine Translates JavaScript into Machine Code](https://www.freecodecamp.org/news/understanding-the-core-of-nodejs-the-powerful-chrome-v8-engine-79e7eb8af964/) by Mayank Tripathi
+
+***
+[Go back to DAY 9](/day_09.md) or [Go next to DAY 11](/day_11.md)
+***
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-10)

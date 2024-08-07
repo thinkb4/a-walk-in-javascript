@@ -55,7 +55,7 @@ We also know from our previous lessons that a `function` is a [Function Object](
 >
 > Source: [ECMAScript International](https://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-function-objects)
 
-Lot of terms are completely obscure at this time but we will shed light to them as the day grows.
+Lots of terms are completely obscure at this time, but we will shed light on them as the day continues.
 
 Now let's see if MDN has something more to say:
 
@@ -114,7 +114,7 @@ Let's see some examples in [MDN - Constructor vs declaration vs expression](http
 
 ### Properties of the Function object in the prototype chain
 
-As we already learn, a `function` is an `object`, therefore it benefits from the `prototype` chain defined properties, which can be any of the ECMAScript types we know.
+As we've already learned, a `function` is an `object`, therefore it benefits from the `prototype` chain defined properties, which can be any of the ECMAScript types we know.
 Let's take a look at [MDN - Function prototype object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function#Function_prototype_object)
 
 ### Arity & formal parameters
@@ -159,7 +159,7 @@ var result = speakToMe( 10 );
 
 ### Formal parameters and the `arguments` thing
 
-Did you note something weird about those terms `arguments` and `parameters` that seem to be interchangeable but ... not quite? Well, you're not alone. It turns out the ARE kinda vague, so for clarity well see a couple of definitions here:
+Did you note something weird about those terms `arguments` and `parameters` that seem to be interchangeable but ... not quite? Well, you're not alone. It turns out they ARE kinda vague, so for clarity well see a couple of definitions here:
 
 > In computer programming, a parameter or a formal argument, is a special kind of variable, used in a subroutine to refer to one of the pieces of data provided as input to the subroutine. These pieces of data are the values of the arguments (often called actual arguments or actual parameters) with which the subroutine is going to be called/invoked.
 > ...
@@ -182,7 +182,7 @@ That said, `arguments` itself has a special meaning in JavaScript. Now let's see
 ### Functions as properties of an object
 
 We've learned the concept of [first-class citizens](https://en.wikipedia.org/wiki/First-class_citizen), therefore we can assign a function to a variable .... what if that variable happens to be an object property?
-Now we're talking, we could create an object with many values of any ECMAScript valid type, including functions, that might manipulate values of the same or other objects!!!. This functions are sometimes called "methods" but that might be an arguable statement. (the door for Object Oriented Programming has been opened )
+Now we're talking, we could create an object with many values of any ECMAScript valid type, including functions, that might manipulate values of the same or other objects!!! These functions are sometimes called "methods" but that might be a controversial statement. (the door for Object Oriented Programming has been opened)
 
 Let's get some insights from [MDN - Method definitions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Method_definitions)
 
@@ -224,7 +224,7 @@ console.log(b); // [2, 3, 4, 5, 6]
 
 > Hey function you can **explicitly** (because I told you so) or **implicitly** (because someone told you so, even without knowing they told you so) **change** everything you can get your claws into, even without letting anyone know about that.
 
-Scary huh? But also powerful, it all depends on the agreement you have with the rest of the engineers (scary huh ? :P). That said, even here a whole world of paradigms lay on top of that [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) thing, like [Imperative programming](https://en.wikipedia.org/wiki/Imperative_programming)
+Scary huh? But also powerful, it all depends on the agreement you have with the rest of the engineers (scary huh ? :P). That said, a whole world of paradigms rest on top of that [Side Effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)) thing, like [Imperative programming](https://en.wikipedia.org/wiki/Imperative_programming)
 
 ```javascript
 
@@ -238,7 +238,7 @@ a.forEach((v,i) => {
 });
 
 console.log(b); // [2, 3, 4, 5, 6] NICE!!!
-console.log(a); // [2, 3, 4, 5, 6] OOPS! we change it!!!
+console.log(a); // [2, 3, 4, 5, 6] OOPS! we changed it!!!
 
 ```
 
@@ -735,7 +735,7 @@ with (Math){x = cos(2)};
 ### Other
 
 - A great analysis of a memory leak example related to inaccurate use of closures [See here](http://point.davidglasser.net/2013/06/27/surprising-javascript-memory-leak.html)
-- The best and more detailed book I've ever read about scope and closures in JS [You Don't Know JS: Scope & Closures](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed/scope%20%26%20closures)
+- The best and most detailed book I've ever read about scope and closures in JS [You Don't Know JS: Scope & Closures](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed/scope%20%26%20closures)
 
 ### Preliminary Practice
 
@@ -761,3 +761,8 @@ Now open your terminal.
 3. Type `npm run test:watch`, this will start running your tests every time you make a change.
 
 **Our task is to make ALL our DAY 6 tests pass ;)**
+
+***
+[Go back to DAY 5](/day_05.md) or [Go next to DAY 7](/day_07.md)
+***
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-6)

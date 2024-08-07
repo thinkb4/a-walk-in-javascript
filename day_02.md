@@ -38,7 +38,7 @@
 
 ## Syntax, Grammar & Semantics
 
-As communicational beings that we are, we all acquire some grade of expertise in one or more kind of languages, which can be expressed through sounds, images, a combination of the first two and an expression of the first through the second, known as characters, that can communicate complete ideas ( e.g. ideograms, icons, emoji ) or sounds ( e.g alphabet ). In our effort to understand languages and the permutations that govern the meaning of that expression, at some point we start defining those rules so everyone can understand, learn and reproduce accurately the language. Programming languages are no exception.  
+As the communicational beings that we are, we all acquire some grade of expertise in one or more kinds of languages, which can be expressed through sounds, images, a combination of the first two and an expression of the first through the second, known as characters, that can communicate complete ideas ( e.g. ideograms, icons, emoji ) or sounds ( e.g alphabet ). In our effort to understand languages and the permutations that govern the meaning of that expression, at some point we start defining those rules so everyone can understand, learn and accurately reproduce the language. Programming languages are no exception.  
 We're not going to dive deep into nuances and details since it'd require long years of study, but we can briefly take a look at the surface to have a better understanding of what's coming next.
 
 > In computer science, the syntax of a computer language is the set of rules that defines the combinations of symbols that are considered to be a correctly structured document or fragment in that language. This applies both to programming languages, where the document represents source code, and to markup languages, where the document represents data.  
@@ -62,7 +62,7 @@ ES6 has a very detailed definition for each case and you're strongly encouraged 
 - [ECMAScript Language: Lexical Grammar](https://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-lexical-grammar)
 - [Syntactic and Lexical Grammar](https://www.ecma-international.org/ecma-262/6.0/#sec-syntactic-and-lexical-grammars)
 
-Some extra info can be found at [MDN - JavaScript Lexical Grammar](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar) and extra generic info at [Wikipedia - Syntax](https://en.wikipedia.org/wiki/Syntax_(programming_languages)), [Wikipedia - Lexical Grammar](https://en.wikipedia.org/wiki/Lexical_grammar) and [Wikipedia - JavaScript Syntax](https://en.wikipedia.org/wiki/JavaScript_syntax) ... but I warn you, the rabbit hole is deeper than you can imagine, and you might loose your mind in the way :P
+Some extra info can be found at [MDN - JavaScript Lexical Grammar](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar) and extra generic info at [Wikipedia - Syntax](https://en.wikipedia.org/wiki/Syntax_(programming_languages)), [Wikipedia - Lexical Grammar](https://en.wikipedia.org/wiki/Lexical_grammar) and [Wikipedia - JavaScript Syntax](https://en.wikipedia.org/wiki/JavaScript_syntax) ... but I warn you, the rabbit hole is deeper than you can imagine, and you might loose your mind along the way :P
 
 ### Statements
 
@@ -126,9 +126,9 @@ You can learn more from his [YDKJS - Types & Grammar](https://github.com/getify/
 
 ### Semantics
 
-So far most of the definitions and examples could be fairly understood left-to-right based on the **form** ( **syntax** ) but as every language, several syntactically similar structures might mean different things depending on the context, and that **meaning** are ruled by the [semantics](https://en.wikipedia.org/wiki/Semantics_(computer_science)).
+So far most of the definitions and examples could be understood fairly well from left-to-right based on the **form** ( **syntax** ) but as in every language, several syntactically similar structures might mean different things depending on the context, and the contextually derived **meaning** is ruled by the [semantics](https://en.wikipedia.org/wiki/Semantics_(computer_science)).
 
-Again Kyle Simpson provides an awesome example of [Contextual Rules](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#contextual-rules) especially for the case of the [Curly Braces](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#blocks) which is so shockingly simple that scares.
+Again Kyle Simpson provides an awesome example of [Contextual Rules](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#contextual-rules) especially for the case of the [Curly Braces](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch5.md#blocks) which is so shockingly simple that it scares.
 
 ## ECMAScript Types
 
@@ -142,10 +142,10 @@ Now let's destroy another myth.
 
 > **[MYTH]** JavaScript doesn't have types
 
-In order bust that myth the only thing we need to do is to carefully read the spec! A word is repeated several times and it's "**value**"!  
-Why is that so important? Because in JavaScript, TYPES is all about VALUES, it doesn't matter the name of an identifier, nor the way you initialized your variable, neither the initial type of the value you assigned to the variable. The TYPE will, ultimately be determined at runtime and if needed it will be [transformed implicitly into another type](http://www.ecma-international.org/ecma-262/6.0/#sec-type-conversion), if needed, in order to operate with that value consistently. The latter mechanism is called [coercion](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch4.md) and we'll explain it later today.
+In order to bust that myth the only thing we need to do is to carefully read the spec! A word is repeated several times and its "**value**"!  
+Why is that so important? Because in JavaScript, TYPES are all about VALUES, no matter what the name of an identifier is, the way you initialized your variable, or the initial type of the value you assigned to the variable. The TYPE will, ultimately be determined at runtime and if needed it _will_ be [transformed implicitly into another type](http://www.ecma-international.org/ecma-262/6.0/#sec-type-conversion) in order to operate with that value consistently. The latter mechanism is called [coercion](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch4.md), and we'll explain it later today.
 
-It's said to be "[weak-typed](https://en.wikipedia.org/wiki/Programming_language#Weak_and_strong_typing)" but I find "[dynamically-typed](https://en.wikipedia.org/wiki/Programming_language#Static_vis-à-vis_dynamic_typing)" more expressive.
+JavaScript is said to be "[weak-typed](https://en.wikipedia.org/wiki/Programming_language#Weak_and_strong_typing)" but I find "[dynamically-typed](https://en.wikipedia.org/wiki/Programming_language#Static_vis-à-vis_dynamic_typing)" more expressive.
 
 ### Value type groups
 
@@ -165,14 +165,14 @@ ES2015 standard defines eight data types organized in two groups.
 
 - [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Objects)
 
-Bibliography related to ECMAScript types is huge, sometimes too cryptic, sometimes too light, and unfortunately many times confusing when not inaccurate. As you might already understand, one of my favorites is Kyle Simpson, one of he's books there's a chapter dedicated to types which covers most of them except for [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) which came out after his first edition. Let's jump into [YDKJS: Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch1.md#built-in-types)
+The bibliography related to ECMAScript types is huge, sometimes too cryptic, sometimes too superficial, and unfortunately it's often confusing if not downright inaccurate. As you might already understand, one of my favorites is Kyle Simpson, one of his books there's a chapter dedicated to types which covers most of them except for [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#BigInt_type) which came out after his first edition. Let's jump into [YDKJS: Types & Grammar](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch1.md#built-in-types)
 
 ### Type Conversion
 
-In order to be able to dynamically convert the type of a value during evaluation - both explicit conversion ( intentional "casting" ) or implicit conversion ( automatic coercion ) - will use the same mechanism.
-E.g. If the value is and `object` and the operations requires a `primitive` output, it'll look for the appropriate method [toPrimitive](http://www.ecma-international.org/ecma-262/6.0/#sec-toprimitive) which will convert its input argument to a non-Object type. If an object is capable of converting to more than one primitive type, it may use the optional hint PreferredType to favour that type. If it's a `primitive` and an `object` is needed, it'll all the [ToObject](http://www.ecma-international.org/ecma-262/6.0/#sec-toobject) abstract operation in order to perform the required transformation and eventually return a [Primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#Primitive_wrapper_objects_in_JavaScript) aka [Boxing Wrapper](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#boxing-wrappers).
+In order to be able to dynamically convert the type of a value during evaluation - both explicit conversion ( intentional "casting" ) and implicit conversion ( automatic coercion ) - will use the same mechanism.
+E.g. If the value is an `object` and the operations requires a `primitive` output, it'll look for the appropriate method [toPrimitive](http://www.ecma-international.org/ecma-262/6.0/#sec-toprimitive) which will convert its input argument to a non-Object type. If an object is capable of converting to more than one primitive type, it may use the optional hint PreferredType to favour that type. If it's a `primitive` and an `object` is needed, it'll call the [ToObject](http://www.ecma-international.org/ecma-262/6.0/#sec-toobject) abstract operation in order to perform the required transformation and eventually return a [Primitive wrapper object](https://developer.mozilla.org/en-US/docs/Glossary/Primitive#Primitive_wrapper_objects_in_JavaScript) aka [Boxing Wrapper](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#boxing-wrappers).
 
-Several things might go wrong during this conversion and all the cases are captured on the spec, but since specs, sometimes are hard to follow, I'd love to show you some practical examples from [YDKJS: Types & Grammar - Natives](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#chapter-3-natives)
+Several things might go wrong during this conversion and all the cases are captured on the spec, but since specs are sometimes hard to follow, I'd love to show you some practical examples from [YDKJS: Types & Grammar - Natives](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch3.md#chapter-3-natives)
 
 Since implicit conversion, called **coercion** is one of the most misunderstood characteristics of JavaScript, let's have a read at [YDKJS: Types & Grammar - Coercion](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/types%20%26%20grammar/ch4.md#chapter-4-coercion)
 
@@ -186,7 +186,7 @@ Generic definition
 
 What does ECMAScript have to say about it?
 
-> ECMAScript defines a set of built-in operators. ECMAScript operators include various unary operations, multiplicative operators, additive operators, bitwise shift operators, relational operators, equality operators, binary bitwise operators, binary logical operators, assignment operators, and the comma operator.
+> ECMAScript defines a set of built-in operators. ECMAScript operators include various [unary operations](https://en.wikipedia.org/wiki/Unary_operation), multiplicative operators, additive operators, bitwise shift operators, relational operators, equality operators, binary bitwise operators, binary logical operators, assignment operators, and the comma operator.
 >
 > Source: [ECMA International](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-overview)
 
@@ -209,7 +209,7 @@ Interesting to know:
 >
 > Source: [ECMA International](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-types-number-type)
 
-Another noteworthy feature introduced on ES6 is the [Destructuring Assignment](http://www.ecma-international.org/ecma-262/6.0/#sec-destructuring-assignment). We're gonna get deeper into it later on this course but to have an appetizer :P let's see some examples at [MDN - Expressions - Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+Another noteworthy feature introduced on ES6 is the [Destructuring Assignment](http://www.ecma-international.org/ecma-262/6.0/#sec-destructuring-assignment). We're gonna get deeper into it later on this course but as an appetizer :P let's see some examples at [MDN - Expressions - Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 If you want to dive into how operators are defined by the spec, there's a complete section dedicated to the [ECMAScript Language: Expressions](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-expressions) or you can take a look at section 12 of the [Table of contents](http://www.ecma-international.org/ecma-262/6.0/#contents) to check them individually.
 

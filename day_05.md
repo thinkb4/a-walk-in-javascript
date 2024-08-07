@@ -37,7 +37,7 @@ Now it's clear that a control structure will:
 
 Although `function` construct, and asynchronous routines like `async/await`, `promise` and timers like `setTimeout` are ways of making decisions and changing the state of a the program, they're not strictly considered control structures. That said, they're so important to know that we're going to see them in the next days.
 
-Note that some languages require a final keyword whilst JavaScript (and others) doesn't. ( [See here](https://en.wikipedia.org/wiki/Control_flow#Control_structures_in_practice) )
+Note that some languages require a final keyword whilst JavaScript (and others) don't. ( [See here](https://en.wikipedia.org/wiki/Control_flow#Control_structures_in_practice) )
 
 It's also interesting to note that "Control Structures" or "control Flow" is not part of the organization of the ECMAScript standard, it rather organizes them in terms of `statements` which make total sense, as it's the spec of the language and not a programming manual.
 
@@ -168,3 +168,8 @@ Now open your terminal.
 3. Type `npm run test:watch`, this will start running your tests every time you make a change.
 
 **Our task is to make ALL our DAY 5 tests pass ;)**
+
+***
+[Go back to DAY 4](/day_04.md) or [Go next to DAY 6](/day_06.md)
+***
+[Back to main page](https://github.com/thinkb4/a-walk-in-javascript/tree/master#day-5)
