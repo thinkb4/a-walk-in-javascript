@@ -65,7 +65,7 @@ Hopefully your walk will be much easier than mine!
 ### [DAY 3](/day_03.md)
   - [Objects explained](/day_03.md#objects-explained)
     - [Objects, the big picture](/day_03.md#objects-the-big-picture)
-    - [Syntax](/day_03.md#syntax)
+    - [Syntax](/day_03.md#the-syntax)
     - [Object properties attributes (accessors, descriptors)](/day_03.md#properties)
     - [Prototype](/day_03.md#prototype)
     - [Behavior Delegation](/day_03.md#behavior-delegation)
