@@ -4,7 +4,7 @@
 
 - [Objects explained](#objects-explained)
   - [Objects, the big picture](#objects-the-big-picture)
-  - [Syntax](#syntax)
+  - [Syntax](#the-syntax)
   - [Object properties attributes (accessors, descriptors)](#properties)
   - [Prototype](#prototype)
   - [Behavior Delegation](#behavior-delegation)
@@ -80,7 +80,7 @@ Great, now we know this:
 
 Are we done? ... not even close!!!!! There's still much to see!
 
-## [The syntax](#syntax)
+## [The syntax](#the-syntax)
 
 In order to create a new object we can use 3 different syntax
 
