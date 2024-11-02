@@ -71,7 +71,7 @@ Hopefully your walk will be much easier than mine!
     - [Behavior Delegation](/day_03.md#behavior-delegation)
     - [Exotic Objects](/day_03.md#exotic-objects)
     - [Object built-in methods](/day_03.md#object-built-in-methods)
-   - [Standard built-in objects](/day_03.md#standard-built-in-objects)
+    - [Standard built-in objects](/day_03.md#standard-built-in-objects)
 ***
 ### [DAY 4](/day_04.md)
   - Indexed and Keyed Collections
