@@ -5,7 +5,7 @@
 - [Objects explained](#objects-explained)
   - [Objects, the big picture](#objects-the-big-picture)
   - [Syntax](#syntax)
-  - [Object properties attributes (accessors, descriptors)](#object-properties-attributes-accessors-descriptors)
+  - [Object properties attributes (accessors, descriptors)](#properties)
   - [Prototype](#prototype)
   - [Behavior Delegation](#behavior-delegation)
   - [Exotic Objects](#exotic-objects)
@@ -90,7 +90,7 @@ In order to create a new object we can use 3 different syntax
 
 Each form provides different characteristics but all will end up creating the same thing, a new object. I listed them in order, being the first the most common one and the third the least used.
 
-## [Properties](#object-properties-attributes-accessors-descriptors)
+## [Properties](#properties)
 
 As we saw before, properties come in two flavors which can be defined in terms of `descriptors`: `data descriptors` and `accessor descriptors`.
 
