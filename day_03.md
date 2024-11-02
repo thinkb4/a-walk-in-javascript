@@ -2,17 +2,17 @@
 
 ## DAY 3
 
-- Objects explained
-  - Objects, the big picture
-  - Syntax
-  - Object properties attributes (accessors, descriptors)
-  - Prototype
-  - Behavior Delegation
-  - Exotic Objects
-  - Object built-in methods
-  - Standard built-in objects
+- [Objects explained](#objects-explained)
+  - [Objects, the big picture](#objects-the-big-picture)
+  - [Syntax](#the-syntax)
+  - [Object properties attributes (accessors, descriptors)](#properties)
+  - [Prototype](#prototype)
+  - [Behavior Delegation](#behavior-delegation)
+  - [Exotic Objects](#exotic-objects)
+  - [Object built-in methods](#object-built-in-methods)
+  - [Standard built-in objects](#standard-built-in-objects)
 
-## Objects, the big picture
+## [Objects, the big picture](#objects-the-big-picture)
 
 First we went through an introduction of the language, then we jumped into the syntax, grammar and types where we realized that "not everything in javascript is an object!", Primitives are not objects and they're immutable! and we also noted Object type in JS has many flavors ( aka sub-types ), but ... what's an object? what can we do with them? what are they for?
 
@@ -80,7 +80,7 @@ Great, now we know this:
 
 Are we done? ... not even close!!!!! There's still much to see!
 
-## The syntax
+## [The syntax](#the-syntax)
 
 In order to create a new object we can use 3 different syntax
 
@@ -90,7 +90,7 @@ In order to create a new object we can use 3 different syntax
 
 Each form provides different characteristics but all will end up creating the same thing, a new object. I listed them in order, being the first the most common one and the third the least used.
 
-## Properties
+## [Properties](#properties)
 
 As we saw before, properties come in two flavors which can be defined in terms of `descriptors`: `data descriptors` and `accessor descriptors`.
 
@@ -131,7 +131,7 @@ function defineWithType (object, key, acceptType) {
 }
 ```
 
-## Prototype
+## [Prototype](#prototype)
 
 Everybody talks about the **prototype chain** but what's that?
 
@@ -156,11 +156,11 @@ Yes!! Let's go to [YDKJS: this & Object Prototypes - Chapter 5 - Prototypes](htt
 
 That's even better
 
-## Behavior Delegation
+## [Behavior Delegation](#behavior-delegation)
 
 Now let's take a look at one of the most powerful aspects of the prototype system. Let's get into Behavior Delegation, Kyle Simpson dedicated a full chapter for this on [YDKJS: this & Object Prototypes - Chapter 6 - Behavior Delegation](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch6.md)
 
-## Exotic Objects
+## [Exotic Objects](#exotic-objects)
 
 We've learned that exotic objects are ones that do not have the default behavior for one or more of the essential internal methods that must be supported by all objects. But what does that mean? and what examples do we have?
 
@@ -175,11 +175,11 @@ Let's check the spec
 
 Let's explore a simple one, [String Exotic Objects](http://www.ecma-international.org/ecma-262/6.0/#sec-string-exotic-objects).
 
-### Object built-in methods
+### [Object built-in methods](#object-built-in-methods)
 
 The default Object "constructor" comes with several utility methods, let's check'em [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor).
 
-### Standard built-in objects
+### [Standard built-in objects](#standard-built-in-objects)
 
 Alright, objects everywhere, some of them come together with the language ( [built-in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects) objects ) and some other are defined by the host application ( e.g [Web API](https://developer.mozilla.org/en-US/docs/Web/API) exposed by the browser )
 
