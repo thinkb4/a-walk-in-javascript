@@ -63,15 +63,15 @@ Hopefully your walk will be much easier than mine!
     - [Spread/Rest](/day_02.md#the-case-of-the---spreadrest-operator-)
 ***
 ### [DAY 3](/day_03.md)
-  - Objects explained
-    - Objects, the big picture
-    - Syntax
-    - Object properties attributes (accessors, descriptors)
-    - Prototype
-    - Behavior Delegation
-    - Exotic Objects
-    - Object built-in methods
-    - Standard built-in objects
+  - [Objects explained](/day_03.md#objects-explained)
+    - [Objects, the big picture](/day_03.md#objects-the-big-picture)
+    - [Syntax](/day_03.md#syntax)
+    - [Object properties attributes (accessors, descriptors)](/day_03.md#properties)
+    - [Prototype](/day_03.md#prototype)
+    - [Behavior Delegation](/day_03.md#behavior-delegation)
+    - [Exotic Objects](/day_03.md#exotic-objects)
+    - [Object built-in methods](/day_03.md#object-built-in-methods)
+   - [Standard built-in objects](/day_03.md#standard-built-in-objects)
 ***
 ### [DAY 4](/day_04.md)
   - Indexed and Keyed Collections
